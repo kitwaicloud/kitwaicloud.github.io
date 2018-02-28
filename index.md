@@ -6,4 +6,4 @@ Basics
 3. Jupyter notebook
 4.
 
-Others
+Others 
