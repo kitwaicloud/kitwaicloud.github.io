@@ -6,4 +6,4 @@ Then, users will see the first page of Jupyter notebook few examples.
 
 Users can create a new notebook, upload a notebook, or open a shell console.
 
-![](jupyter_new_notebook.png | width=100)
+<img src="jupyter_new_notebook.png" width="100">
