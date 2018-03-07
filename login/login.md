@@ -10,7 +10,7 @@ Before launching a spark cluster for running Big Data Analytics jobs, users have
 
 2. Enter username and password, then click on Connect button.
 
-3. After logging in has succeeded, you will see project overview page. The page shows quota of resources usage such as number of instance, vCPUs  and memory. You will see number of resources usage that is running and also maximum resources usage that you can used on this page.
+3. After logging in has succeeded, you will see project overview page. The page shows quota of resources usage such as number of instance, vCPUs  and memory. You will see number of resources usage that is running and also maximum resources usage that you can used within your project on this page.
 
    <img src="overviewpage.png" width="600">
 
