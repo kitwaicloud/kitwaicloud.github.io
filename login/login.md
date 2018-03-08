@@ -1,6 +1,6 @@
 # Login to KitWai and Import Key Pair 
 
-Before launching a spark cluster for running Big Data Analytics jobs on KitWai platforms, users have to log in to KitWai platforms for importing  a user key pair. A  user key pair will be used with any SSH clients for accessing spark cluster without entering user password. For importing a user key pair users can do as instructions below.
+Before launching a spark cluster for running Big Data Analytics jobs on KitWai platforms, users have to log in to KitWai platforms for importing  a user key pair. A  user key pair will be used with any SSH clients for accessing spark cluster without entering user password. Please follow the instructions below on how to import a user key pair.
 
 1. Connect web browser to [KitWai](https://kitwai.com). Then, enter username and password and clicking on Connect button.
 

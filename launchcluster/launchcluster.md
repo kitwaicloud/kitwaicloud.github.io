@@ -1,6 +1,6 @@
 # Launch a Spark Cluster
 
-For launching a spark cluster for running Big Data Analytics jobs on KitWai platforms, users can do as following step by step:
+For launching a spark cluster for running Big Data Analytics jobs on KitWai platforms, please follow the instructions below on how to launch a spark cluster.
 
 1. Click on Data Processing menu and Clusters menu which is under Data Processing menu, respectively. Then, click on Clusters tab and click on Launch Cluster button.
 

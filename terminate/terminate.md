@@ -1,6 +1,6 @@
 # Terminate a Spark Cluster
 
-Users can terminate a spark cluster as following step by step:
+Please follow the instructions below on how to terminate a spark cluster.
 
 1. On Clusters page, select Delete Cluster menu which is under actions drop down list on your cluster name.
 
