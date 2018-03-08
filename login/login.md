@@ -26,7 +26,7 @@ Before launching a spark cluster for running Big Data Analytics jobs on KitWai p
 
    ​
 
-5. A new key pair will be shown on key pair page after importing a key pair in step 5 has succeeded.
+5. A new key pair will be shown on key pair page after importing a key pair in step 4 has succeeded.
 
    <img src="importkeypair-3.png" width="600">
 
