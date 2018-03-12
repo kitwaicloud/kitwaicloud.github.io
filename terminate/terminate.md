@@ -19,3 +19,5 @@ Please follow the instructions below on how to terminate a spark cluster.
    <img src="terminate-3.png" width="600">
 
    ​
+
+4. A spark cluster has successfully deleted.
