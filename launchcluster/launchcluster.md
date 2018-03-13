@@ -22,15 +22,13 @@ For launching a spark cluster for running Big Data Analytics jobs on KitWai plat
 
    ​
 
-4. While a spark cluster is launching, please wait until cluster status has changed to Active and also health status has changed to Green bar. 
+4. While a spark cluster is launching, please wait until cluster status has changed to Active and also health status has changed to Green bar.
 
    <img src="launchcluster-4.png" width="600">
 
    <img src="launchcluster-5.png" width="600">
 
    ​
-
 5. Congratulation, the spark cluster is ready in use.
 
    ​
-
