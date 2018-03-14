@@ -1,4 +1,4 @@
-# Do Machine Learning with Jupyter Notebook
+# Train a Machine Learning Model with Jupyter Notebook
 
 Jupyter is a common web-based notebook for users to interactively write python programs together with documents. In our demo Spark cluster template, Jupyter has been pre-configured to connect to the Spark cluster.
 
@@ -14,14 +14,14 @@ Then, users will see the first page of Jupyter notebook few examples.
 
 ![](jupyter_front.png)
 
-<img src="jupyter_new_notebook.png" width="100">
+<img src="jupyter_new_notebook.png" width="200">
 
 Users can create a new notebook, upload a notebook, or open a shell console.
 
 ## 2. Download and copy sample dataset to HDFS.
 First, open a shell console. Click New -> Terminal on the Jupyter front page.
 
-<img src="jupyter_shell_console.png" width="300">
+<img src="jupyter_shell_console.png" width="400">
 
 Then, execute the following shell commands.
 
@@ -48,12 +48,13 @@ Click on New -> Python 3.
 
 <img src="jupyter_blank_notebook.png" width="400">
 
-Then start writing the following python code into Jupyter code cells. Run each code cell sequentially.
+Then, we can start writing python code into Jupyter code cells. For each code cell, we can run it.
 
-<img src="run_code_cell.png" width="300">
+<img src="run_code_cell.png" width="500">
 
+Next, we will train a machine learning model by a series of code blocks. Code and run each of them sequentially to gain interactive programming experience. Otherwise, the entire notebook can be downloaded from
 
-The entire notebook can be downloaded from https://github.com/kitwaicloud/kitwaicloud.github.io/raw/master/jupyter/LR.ipynb
+https://github.com/kitwaicloud/kitwaicloud.github.io/raw/master/jupyter/LR.ipynb
 
 ## 4. Load and explore data
 

@@ -1,5 +1,11 @@
 # Working with Data in Swift Object Storage
-Openstack Swift is a cloud object storage. Swift stores arbitrary objects in specific namespaces,  called containers. Objects can be text, documents, images, or other types of files.A container is a place used to collect a set of objects, similar to a folder storing a set of files. 
+Openstack Swift is a cloud object storage. Swift stores arbitrary objects in specific namespaces,  called containers. Objects can be text, documents, images, or other types of files. A container is a place used to collect a set of objects, similar to a folder storing a set of files.
+
+To store (import) and retrieve (export) files from Swift, several options are possible:
+- Swift command line
+- Web Interface
+- GUI Client programs
+- Directly from Spark programs
 
 ## Import/Export Swift Objects via Web Interface
 
@@ -23,7 +29,7 @@ Openstack Swift is a cloud object storage. Swift stores arbitrary objects in spe
 
   ​
 
-- After creating the container has succeeded, the container name will be shown on Containers page. 
+- After creating the container has succeeded, the container name will be shown on Containers page.
 
   <img src="swift_web_containerlist.png" width="550">
 
@@ -59,7 +65,7 @@ Openstack Swift is a cloud object storage. Swift stores arbitrary objects in spe
 
   ​
 
-- Import swift objects has succeeded. 
+- Import swift objects has succeeded.
 
 ### Export swift objects
 
@@ -96,4 +102,33 @@ The containers are shown.
 
 ![](cyberduck_container.png)
 
-## How to Access Swift Objects from Spark Programs
+## How to Access Swift Objects directly from Spark Programs
+
+** Swift object storage is not supposed to be  the working area for data intensive jobs. Use HDFS instead. ** 
+
+Spark can access Swift objects via HDFS layer. The URL format of a Swift object is in the following form:
+
+```
+swift://container_name.sahara/path/file
+```
+
+For example, if an object _churn-bigml-80.csv_ is stored under container _mycontainer_ and path _/dataset/churn_, the URL would be
+
+```
+swift://mycontainer.sahara/dataset/churn/churn-bigml-80.csv
+```
+Wildcard can also be used, e.g.
+```
+swift://mycontainer.sahara/dataset/churn/churn-bigml-*.csv
+```
+To use a swift object in Spark, refer to its URL.
+
+```python
+train_data = sqlContext.read.load('swift://mycontainer.sahara/dataset/churn/churn-bigml-80.csv',
+                        format='com.databricks.spark.csv',
+                        header='true',
+                        inferSchema='true')
+
+train_data.cache()
+train_data.printSchema()
+```

@@ -1,12 +1,12 @@
 # KitWai Instruction Manual
 
-KitWai, a software to build a cloud-based big data analytics platform, provides self-configured, on-demand, and scalable computing resources for big data processing. It consists of the following components.
+KitWai is a software stack for cloud-based big data analytics platform. It provides self-configured, on-demand, and scalable computing resources for big data processing. KitWai consists of the following components.
 
 | Layer | Component |
 |----|----|
 | Tools and utilities | Ganglia Monitoring, Thrift JDBC connection, Jupyter/Zeppelin Notebook, RStudio Server |
 | Distributed computing platform for big data analytics | Hadoop HDFS 2.7.1, Spark 2.2.0, Flink 1.4.0, Kafka 1.0.0, Tensorflow on Spark|
-| Cloud-based resource management  | CentOS 7.4, Openstack Pike (Nova, Cinder, Swift, Sahara, Glance, Neutron), Nvidia GPU support |
+| Cloud-based resource management  | CentOS 7.4, Openstack Pike (Nova, Cinder, Swift, Sahara, Glance, Neutron), Nvidia GPU support, KVM Hypervisor and LXC Linux Container Support |
 
 This instruction manual provides an illustrative examples to use KitWai cloud computing platform. It requires a basic knowledge of Linux commands plus some background knowledge on data mining/machine learning.
 
@@ -15,7 +15,7 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 2. [Login to KitWai and Import KeyPair](login/login.md)
 3. [Launch a Spark Cluster](launchcluster/launchcluster.md)
 4. [Verify and Check Spark Cluster Status](status/status.md)
-5. [Do Machine Learning with Jupyter Notebook](jupyter/jupyter.md)
+5. [Train a Machine Learning Model with Jupyter Notebook](jupyter/jupyter.md)
 6. [Terminate Spark Cluster after Use](terminate/terminate.md)
 
 ## Other Tasks
