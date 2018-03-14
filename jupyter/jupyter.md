@@ -53,9 +53,7 @@ Then, we can start writing python code into Jupyter code cells. For each code ce
 
 <img src="run_code_cell.png" width="500">
 
-Next, we will train a machine learning model by a series of code blocks. Code and run each of them sequentially to gain interactive programming experience. Otherwise, the entire notebook can be downloaded from
-
-https://github.com/kitwaicloud/kitwaicloud.github.io/raw/master/jupyter/LR.ipynb
+Next, we will train a machine learning model by a series of code blocks. Code and run each of them sequentially to gain interactive programming experience. Otherwise, the entire notebook can be downloaded from [https://github.com/kitwaicloud/kitwaicloud.github.io/raw/master/jupyter/LR.ipynb](https://github.com/kitwaicloud/kitwaicloud.github.io/raw/master/jupyter/LR.ipynb)
 
 ## 4. Load and explore data
 
