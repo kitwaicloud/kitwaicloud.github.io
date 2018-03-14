@@ -36,7 +36,10 @@ Check the sample dataset in HDFS
 
 ```shell
 hdfs dfs -ls dataset
-Found 1 items
+Found 2 items
+-rw-r--r--   1 centos supergroup      56329 2018-03-13 17:22 dataset/churn-bigml-20.csv
+-rw-r--r--   1 centos supergroup     223998 2018-03-13 09:39 dataset/churn-bigml-80.csv
+
 ```
 This dataset provides details of customers and labels if they cancel the subscription.
 
@@ -75,29 +78,31 @@ train_data.cache()
 train_data.printSchema()
 ```
 
+The output show that the dataset consists of 20 fields.
 
-  root
-  |-- State: string (nullable = true)
-  |-- Account length: integer (nullable = true)
-  |-- Area code: integer (nullable = true)
-  |-- International plan: string (nullable = true)
-  |-- Voice mail plan: string (nullable = true)
-  |-- Number vmail messages: integer (nullable = true)
-  |-- Total day minutes: double (nullable = true)
-  |-- Total day calls: integer (nullable = true)
-  |-- Total day charge: double (nullable = true)
-  |-- Total eve minutes: double (nullable = true)
-  |-- Total eve calls: integer (nullable = true)
-  |-- Total eve charge: double (nullable = true)
-  |-- Total night minutes: double (nullable = true)
-  |-- Total night calls: integer (nullable = true)
-  |-- Total night charge: double (nullable = true)
-  |-- Total intl minutes: double (nullable = true)
-  |-- Total intl calls: integer (nullable = true)
-  |-- Total intl charge: double (nullable = true)
-  |-- Customer service calls: integer (nullable = true)
-  |-- Churn: boolean (nullable = true)
-
+```
+root
+|-- State: string (nullable = true)
+|-- Account length: integer (nullable = true)
+|-- Area code: integer (nullable = true)
+|-- International plan: string (nullable = true)
+|-- Voice mail plan: string (nullable = true)
+|-- Number vmail messages: integer (nullable = true)
+|-- Total day minutes: double (nullable = true)
+|-- Total day calls: integer (nullable = true)
+|-- Total day charge: double (nullable = true)
+|-- Total eve minutes: double (nullable = true)
+|-- Total eve calls: integer (nullable = true)
+|-- Total eve charge: double (nullable = true)
+|-- Total night minutes: double (nullable = true)
+|-- Total night calls: integer (nullable = true)
+|-- Total night charge: double (nullable = true)
+|-- Total intl minutes: double (nullable = true)
+|-- Total intl calls: integer (nullable = true)
+|-- Total intl charge: double (nullable = true)
+|-- Customer service calls: integer (nullable = true)
+|-- Churn: boolean (nullable = true)
+```
 
 Explore the first five rows.
 
@@ -437,6 +442,8 @@ Count churn customers.
 ```python
 train_data.groupBy('Churn').count().show()
 ```
+
+The output is as follows.
 
 ```
 +-----+-----+

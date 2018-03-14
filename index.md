@@ -25,5 +25,7 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 - [Deep Learning with TensorFlow on Spark](tensorflow_on_spark/tensorflow_on_spark.md)
 - [How to Create a Cluster Template](create_template/create_template.md)
 - [Using API Libraries to Operate KitWai](apis/apis.md)
+- [SparkSQL and JDBC Connnection](sparksql/sparksql.md)
+- [Using Zeppelin Notebook for Spark Programming in Scala](zeppelin/zeppelin.md)
 
 ## Further Readings
