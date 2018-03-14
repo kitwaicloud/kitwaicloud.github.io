@@ -14,13 +14,11 @@ For launching a spark cluster for running Big Data Analytics jobs on KitWai plat
 
    ​
 
-3. On Launch Cluster page, enter cluster name as your desired and select your key pair name which is imported in step of importing an user key pair. Then, click on Launch button.
+3. On Launch Cluster page, enter cluster name as your desired and select your key pair name which is imported in step of importing an user key pair. Ensure that the Cluster Template is set to kitwai-template. Then, click on Launch button.
 
    <img src="launchcluster-3.png" width="600">
 
    <img src="launchcluster-31.png" width="600">
-
-   ​
 
 4. While a spark cluster is launching, please wait until cluster status has changed to Active and also health status has changed to Green bar.
 
@@ -30,5 +28,7 @@ For launching a spark cluster for running Big Data Analytics jobs on KitWai plat
 
    ​
 5. Congratulation, the spark cluster is ready in use.
+
+   Each cluster from the kitwai-template consists of 1 master node and 2 worker nodes. The master node runs spark master, namenode and Jupyter processes. The worker nodes run spark worker and datanode processes.
 
    ​
