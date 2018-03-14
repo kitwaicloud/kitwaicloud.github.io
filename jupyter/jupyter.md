@@ -8,7 +8,7 @@ In the following, we show how to use Jupyter to run a small machine job on Spark
 
 Connect web browser to  http://&lt;masterIP&gt;:8888 or click on the Jupyter Notebook link in the cluster info page as shown below.
 
-<img src="general_info.png" width="600">
+<img src="general_info.png" width="300">
 
 Then, users will see the first page of Jupyter notebook few examples.
 
@@ -47,7 +47,7 @@ Click on New -> Python 3.
 
 Then start writing the following python code into Jupyter code cells. Run each code cell sequentially.
 
-![](run_code_cell.png)
+<img src="run_code_cell.png" width="300">
 
 ## 4. Load and explore data
 
