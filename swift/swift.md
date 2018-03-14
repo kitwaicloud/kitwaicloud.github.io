@@ -3,6 +3,72 @@ Openstack Swift is a cloud object storage. Swift stores arbitrary objects in spe
 
 ## Import/Export Swift Objects via Web Interface
 
+### Import swift objects
+
+- Login to KitWai platforms and go to containers page by clicking on Object Store menu then click on Containers menu.
+
+  <img src="swift_web_menu.png" width="550">
+
+  ​
+
+- On Containers page, create a container by clicking on Container button.
+
+  <img src="swift_web_containerpage.png" width="550">
+
+  ​
+
+- Create Container page will be pop up then enter container name as your desired and click on Submit button.
+
+  <img src="swift_web_create_container.png" width="550">
+
+  ​
+
+- After creating the container has succeeded, the container name will be shown on Containers page. 
+
+  <img src="swift_web_containerlist.png" width="550">
+
+  ​
+
+- Then click on container name, users will see container information and button for importing files and creating folder on the container.
+
+  <img src="swift_web_container_information.png" width="550">
+
+  ​
+
+- Import a file by clicking on upload file button.
+
+  <img src="swift_web_import_button.png" width="550">
+
+  ​
+
+- Upload File page will be popup, then click on Browse button and select a file that users want  upload to the container.  
+
+  <img src="swift_web_container_browsefile.png" width="550">
+
+  ​
+
+- Then, click on Upload file button for importing a file to the container.
+
+  <img src="swift_web_container_upload.png" width="550">
+
+  ​
+
+- After uploading has succeeded, the file which is uploaded  will be shown in list on container page.
+
+  <img src="swift_web_container_uploadsuccess.png" width="550">
+
+  ​
+
+- Import swift objects has succeeded. 
+
+### Export swift objects
+
+- On container page, users can export a file from the container to users machine by clicking on download button on the filename that users want to download.
+
+  <img src="swift_web_container_downloadfile.png" width="550">
+
+  ​
+
 ## Import/Export Swift Objects via GUI Clients
 There exist tools running on Windows or Mac.
 
