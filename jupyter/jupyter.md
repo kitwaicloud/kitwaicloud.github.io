@@ -45,6 +45,10 @@ Click on New -> Python 3.
 
 <img src="jupyter_blank_notebook.png" width="400">
 
+Then start writing the following python code into Jupyter code cells. Run each code cell sequentially.
+
+![](run_code_cell.png)
+
 ## 4. Load and explore data
 
 Disable warnings, set Matplotlib inline plotting and load Pandas package.
