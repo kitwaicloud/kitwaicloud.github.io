@@ -15,7 +15,7 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 2. [Login to KitWai and Import KeyPair](login/login.md)
 3. [Launch a Spark Cluster](launchcluster/launchcluster.md)
 4. [Verify and Check Spark Cluster Status](status/status.md)
-5. [Connect to Jupyter Notebook](jupyter/jupyter.md)
+5. [Do Machine Learning with Jupyter Notebook](jupyter/jupyter.md)
 6. [Terminate Spark Cluster after Use](terminate/terminate.md)
 
 ## Other Tasks

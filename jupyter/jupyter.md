@@ -1,4 +1,4 @@
-# Connect to Jupyter Notebook
+# Do Machine Learning with Jupyter Notebook
 
 Jupyter is a common web-based notebook for users to interactively write python programs together with documents. In our demo Spark cluster template, Jupyter has been pre-configured to connect to the Spark cluster.
 
@@ -51,6 +51,9 @@ Click on New -> Python 3.
 Then start writing the following python code into Jupyter code cells. Run each code cell sequentially.
 
 <img src="run_code_cell.png" width="300">
+
+
+The entire notebook can be downloaded from https://github.com/kitwaicloud/kitwaicloud.github.io/raw/master/jupyter/LR.ipynb
 
 ## 4. Load and explore data
 
