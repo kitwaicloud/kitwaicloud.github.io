@@ -30,3 +30,7 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 - [Launch a Flink Cluster](launchflink/launchflink.md)
 
 ## Further Readings
+
+- [OpenStack Dashboard User Documentation](https://docs.openstack.org/sahara/latest/user/index.html)
+- [OpenStack Sahara User Documentation](https://docs.openstack.org/sahara/latest/user/index.html)
+
