@@ -8,16 +8,16 @@ Please follow the instructions below on how to terminate a spark cluster.
 
    ​
 
-2. The confirm delete cluster page will be pop up and then click on Delete Cluster button for deleting a cluster.
+2. The confirm delete cluster page will be pop up and then click on Delete Cluster button to delete the cluster.
 
    <img src="terminate-2.png" width="600">
 
    ​
 
-3. After deleting succeeded, the cluster is removed from clusters page.
+3. After deleting succeeded, the cluster is removed from Clusters page.
 
    <img src="terminate-3.png" width="600">
 
    ​
 
-4. A spark cluster has successfully deleted.
+4. The spark cluster has successfully been deleted.

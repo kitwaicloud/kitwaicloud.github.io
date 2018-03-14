@@ -10,16 +10,17 @@ Connect web browser to  http://&lt;masterIP&gt;:8888 or click on the Jupyter Not
 
 <img src="general_info.png" width="300">
 
-Then, users will see the first page of Jupyter notebook few examples.
+Then, users will see the home page of Jupyter notebook few examples.
 
-![](jupyter_front.png)
-
-<img src="jupyter_new_notebook.png" width="200">
+<img src="jupyter_front.png" width="400">
 
 Users can create a new notebook, upload a notebook, or open a shell console.
 
+<img src="jupyter_new_notebook.png" width="200">
+
+
 ## 2. Download and copy sample dataset to HDFS.
-First, open a shell console. Click New -> Terminal on the Jupyter front page.
+First, open a shell console. Click New -> Terminal on the Jupyter home page.
 
 <img src="jupyter_shell_console.png" width="400">
 
