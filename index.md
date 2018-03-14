@@ -27,5 +27,6 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 - [Using API Libraries to Operate KitWai](apis/apis.md)
 - [SparkSQL and JDBC Connnection](sparksql/sparksql.md)
 - [Using Zeppelin Notebook for Spark Programming in Scala](zeppelin/zeppelin.md)
+- [Launch a Flink Cluster](launchflink/launchflink.md)
 
 ## Further Readings

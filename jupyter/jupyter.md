@@ -741,7 +741,7 @@ from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 
 multi = MulticlassClassificationEvaluator(labelCol='label', predictionCol='prediction', metricName="accuracy")
 accuracy = multi.evaluate(predictions)
-print("Accuracy = %f" % accuracy)
+print("Accuracy = %3.2f" % accuracy)
 ```
 
 ```
