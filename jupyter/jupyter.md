@@ -75,29 +75,29 @@ train_data.cache()
 train_data.printSchema()
 ```
 
-```
-root
-|-- State: string (nullable = true)
-|-- Account length: integer (nullable = true)
-|-- Area code: integer (nullable = true)
-|-- International plan: string (nullable = true)
-|-- Voice mail plan: string (nullable = true)
-|-- Number vmail messages: integer (nullable = true)
-|-- Total day minutes: double (nullable = true)
-|-- Total day calls: integer (nullable = true)
-|-- Total day charge: double (nullable = true)
-|-- Total eve minutes: double (nullable = true)
-|-- Total eve calls: integer (nullable = true)
-|-- Total eve charge: double (nullable = true)
-|-- Total night minutes: double (nullable = true)
-|-- Total night calls: integer (nullable = true)
-|-- Total night charge: double (nullable = true)
-|-- Total intl minutes: double (nullable = true)
-|-- Total intl calls: integer (nullable = true)
-|-- Total intl charge: double (nullable = true)
-|-- Customer service calls: integer (nullable = true)
-|-- Churn: boolean (nullable = true)
-```
+
+    root
+    |-- State: string (nullable = true)
+    |-- Account length: integer (nullable = true)
+    |-- Area code: integer (nullable = true)
+    |-- International plan: string (nullable = true)
+    |-- Voice mail plan: string (nullable = true)
+    |-- Number vmail messages: integer (nullable = true)
+    |-- Total day minutes: double (nullable = true)
+    |-- Total day calls: integer (nullable = true)
+    |-- Total day charge: double (nullable = true)
+    |-- Total eve minutes: double (nullable = true)
+    |-- Total eve calls: integer (nullable = true)
+    |-- Total eve charge: double (nullable = true)
+    |-- Total night minutes: double (nullable = true)
+    |-- Total night calls: integer (nullable = true)
+    |-- Total night charge: double (nullable = true)
+    |-- Total intl minutes: double (nullable = true)
+    |-- Total intl calls: integer (nullable = true)
+    |-- Total intl charge: double (nullable = true)
+    |-- Customer service calls: integer (nullable = true)
+    |-- Churn: boolean (nullable = true)
+
 
 Explore the first five rows.
 
