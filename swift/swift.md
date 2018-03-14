@@ -104,7 +104,7 @@ The containers are shown.
 
 ## How to Access Swift Objects directly from Spark Programs
 
-** Swift object storage is not supposed to be  the working area for data intensive jobs. Use HDFS instead. ** 
+**Swift object storage is not supposed to be  the working area for data intensive jobs. Use HDFS instead.** 
 
 Spark can access Swift objects via HDFS layer. The URL format of a Swift object is in the following form:
 

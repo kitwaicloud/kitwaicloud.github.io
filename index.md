@@ -21,6 +21,7 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 ## Other Tasks
 - [Working with Data in Swift Object Storage](swift/swift.md)
 - [Production Recommendation Example](als/als.md)
+- [How to Deploy a Spark ML Model](deploy/deploy.md)
 - [Deep Learning with DeepLearning4J](dl4j/dl4j.md)
 - [Deep Learning with TensorFlow on Spark](tensorflow_on_spark/tensorflow_on_spark.md)
 - [How to Create a Cluster Template](create_template/create_template.md)
@@ -33,4 +34,3 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 
 - [OpenStack Dashboard User Documentation](https://docs.openstack.org/sahara/latest/user/index.html)
 - [OpenStack Sahara User Documentation](https://docs.openstack.org/sahara/latest/user/index.html)
-
