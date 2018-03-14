@@ -8,7 +8,7 @@ KitWai, a software to build a cloud-based big data analytics platform, provides 
 | Distributed computing platform for big data analytics | Hadoop HDFS 2.7.1, Spark 2.2.0, Flink 1.4.0, Kafka 1.0.0, Tensorflow on Spark|
 | Cloud-based resource management  | CentOS 7.4, Openstack Pike (Nova, Cinder, Swift, Sahara, Glance, Neutron), Nvidia GPU support |
 
-This user manual requires a basic knowledge of Linux commands plus some background knowledge on data mining/machine learning.
+This instruction manual provides an illustrative examples to use KitWai cloud computing platform. It requires a basic knowledge of Linux commands plus some background knowledge on data mining/machine learning.
 
 ## Basics
 1. [Overview](overview.md)
@@ -24,5 +24,6 @@ This user manual requires a basic knowledge of Linux commands plus some backgrou
 - [Deep Learning with DeepLearning4J](dl4j/dl4j.md)
 - [Deep Learning with TensorFlow on Spark](tensorflow_on_spark/tensorflow_on_spark.md)
 - [How to Create a Cluster Template](create_template/create_template.md)
+- [Using API Libraries to Operate KitWai](apis/apis.md)
 
 ## Further Readings
