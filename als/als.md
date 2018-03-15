@@ -2,7 +2,7 @@
 
 This example shows how to build a model for product recommendation. In this example, a spark example program is used. It runs the Alternating Least Square (ALS) algorithm to build a model to predict the rating of unseen movies for a particular user.
 
-The input dataset are taken from http://grouplens.org/datasets/movielens/.  It consists of ratings.csv, each line of which describes the rating (1 – 5) that a user gives to a movie, as shown below. Each line consists of UserID::MovieID::Rating::Timestamp. Note that the other larger dataset has slightly different format and cannot work without modification.
+The input dataset are taken from [http://grouplens.org/datasets/movielens/](http://grouplens.org/datasets/movielens/).  It consists of ratings.csv, each line of which describes the rating (1 – 5) that a user gives to a movie, as shown below. Each line consists of UserID::MovieID::Rating::Timestamp. Note that the other larger dataset has slightly different format and cannot work without modification.
 
 ```
 1::1193::5::978300760

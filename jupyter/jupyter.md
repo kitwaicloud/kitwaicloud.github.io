@@ -751,6 +751,7 @@ print("Accuracy = %3.2f" % accuracy)
 Accuracy = 0.850075
 ```
 
+Users can try to adjust training parameters to improve the accuracy of prediction.
 
 
 
