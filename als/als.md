@@ -1,4 +1,4 @@
-# Production Recommendation Example
+# Product Recommendation Example
 
 This example shows how to build a model for product recommendation. In this example, a spark example program is used. It runs the Alternating Least Square (ALS) algorithm to build a model to predict the rating of unseen movies for a particular user.
 
