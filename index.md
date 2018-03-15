@@ -28,5 +28,5 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 
 ## Further Readings
 
-- [OpenStack Dashboard User Documentation](https://docs.openstack.org/sahara/latest/user/index.html)
+- [OpenStack Dashboard User Documentation](https://docs.openstack.org/horizon/pike/user/)
 - [OpenStack Sahara User Documentation](https://docs.openstack.org/sahara/latest/user/index.html)
