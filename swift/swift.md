@@ -78,7 +78,10 @@ To store (import) and retrieve (export) files from Swift, several options are po
 ## Import/Export Swift Objects via GUI Clients
 There exist tools running on Windows or Mac.
 
-- CloudBerry Explorer for Openstack https://www.cloudberrylab.com/explorer.aspx
+- CloudBerry Explorer for Openstack [https://www.cloudberrylab.com/explorer.aspx](https://www.cloudberrylab.com/explorer.aspx)
+- Cyberduck [https://cyberduck.io/](https://cyberduck.io/)
+
+### Setup CloudBerry Explorer
 
 Click on File -> New Openstack Account. Put username, password and other information as follows.
 
@@ -92,7 +95,7 @@ The containers under the default project are shown.
 
 ![](cloudberry_container.png)
 
-- Cyberduck https://cyberduck.io/
+### Setup Cyberduck
 
 Click on File -> Open Connection. Put project, username, password and other information as follows.
 
@@ -104,7 +107,7 @@ The containers are shown.
 
 ## How to Access Swift Objects directly from Spark Programs
 
-**Swift object storage is not supposed to be  the working area for data intensive jobs. Use HDFS instead.** 
+_Swift object storage is not supposed to be  the working area for data intensive jobs. Use HDFS instead if performance is the priority._
 
 Spark can access Swift objects via HDFS layer. The URL format of a Swift object is in the following form:
 
