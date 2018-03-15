@@ -1,12 +1,8 @@
 # KitWai Instruction Manual
 
-KitWai is a software stack for cloud-based big data analytics platform. It provides self-configured, on-demand, and scalable computing resources for big data processing. KitWai consists of the following components.
+KitWai is a software stack for cloud-based big data analytics platform. It provides self-configured, on-demand, and scalable computing resources for big data processing.
 
-| Layer | Component |
-|----|----|
-| Tools and utilities | Ganglia Monitoring, Thrift JDBC connection, Jupyter/Zeppelin Notebook, RStudio Server |
-| Distributed computing platform for big data analytics | Hadoop HDFS 2.7.1, Spark 2.2.0, Flink 1.4.0, Kafka 1.0.0, Tensorflow on Spark|
-| Cloud-based resource management  | CentOS 7.4, Openstack Pike (Nova, Cinder, Swift, Sahara, Glance, Neutron), Nvidia GPU support, KVM Hypervisor and LXC Linux Container Support |
+<img src="kitwai.png" width="600">
 
 This instruction manual provides an illustrative examples to use KitWai cloud computing platform. It requires a basic knowledge of Linux commands plus some background knowledge on data mining/machine learning.
 
