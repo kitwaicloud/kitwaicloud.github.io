@@ -32,3 +32,4 @@ Before launching a spark cluster for running Big Data Analytics jobs on KitWai p
 
    ​
 
+6. This key pair can be used to SSH into Spark clusters which will be created later if necessary.

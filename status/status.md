@@ -33,3 +33,5 @@ Users can always check the status of a spark cluster as well as the service URLs
    <img src="instances.png" width="550">
 
    ​
+
+6. (Optional) You can SSH to any node via the management IP. Each node is a Linux VM (or container).
