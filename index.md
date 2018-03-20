@@ -6,6 +6,8 @@ KitWai is a software stack for cloud-based big data analytics platform. It provi
 
 This instruction manual provides an illustrative examples to use KitWai cloud computing platform. It requires a basic knowledge of Linux commands plus some background knowledge on data mining/machine learning.
 
+For more information, contact kitwai _at_ nectec _dot_ or _dot_ th
+
 ## Basics
 1. [Overview](overview.md)
 2. [Login to KitWai and Import KeyPair](login/login.md)

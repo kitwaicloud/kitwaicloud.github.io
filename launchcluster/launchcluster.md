@@ -20,7 +20,7 @@ For launching a spark cluster for running Big Data Analytics jobs on KitWai plat
 
    <img src="launchcluster-31.png" width="600">
 
-4. While a spark cluster is launching, please wait until cluster status has changed to Active and also health status has changed to Green bar.
+4. While a spark cluster is launching, please wait until cluster status has changed to Active and also health status has changed to Green bar (3-5 minutes).
 
    <img src="launchcluster-4.png" width="600">
 
