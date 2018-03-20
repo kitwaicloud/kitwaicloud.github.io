@@ -463,7 +463,10 @@ Convert categorical fields into numeric fields.
 
 ```python
 from pyspark.ml.feature import StringIndexer
+from pyspark.ml.feature import OneHotEncoder
+
 ipIndexer = StringIndexer(inputCol = 'International plan', outputCol = 'ipIndex')
+ipEncoder = OneHotEncoder(inputCol = 'ipIndex', outputCol = 'ipVector')
 ```
 Define feature fields. We choose to ignore some fields as we think they are not relevant.
 
@@ -471,7 +474,7 @@ Define feature fields. We choose to ignore some fields as we think they are not 
 ```python
 from pyspark.ml.feature import VectorAssembler
 
-featureCols = ['Account length', 'ipIndex', 'Number vmail messages', 'Total day minutes',
+featureCols = ['Account length', 'ipVector', 'Number vmail messages', 'Total day minutes',
    'Total day calls', 'Total eve minutes', 'Total eve calls', 'Total night minutes', 'Total night calls',
    'Total intl minutes', 'Total intl calls', 'Customer service calls']
 assembler = VectorAssembler(inputCols = featureCols, outputCol = 'features')
@@ -671,7 +674,7 @@ Chain all transformers and train the model.
 ```python
 from pyspark.ml import Pipeline
 
-pipeline = Pipeline(stages=[ipIndexer,assembler, lr])
+pipeline = Pipeline(stages=[ipIndexer, ipEncoder, assembler, lr])
 model = pipeline.fit(train_data)
 ```
 
