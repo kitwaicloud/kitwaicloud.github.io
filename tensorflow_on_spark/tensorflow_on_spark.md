@@ -1,4 +1,4 @@
-# Deep Learning with TensorFlow on Spark
+# Deep Learning with TensorFlowOnSpark
 
 TensorFlowOnSpark provides a framework for running TensorFlow on Apache Spark. It allows distributed training and inference on Apache Spark clusters. It requires minimal changes to existing TensorFlow programs. See. [https://github.com/yahoo/TensorFlowOnSpark/wiki/Conversion-Guide] for more information on TensorFlow to TensorFlowOnSpark conversion. 
 
@@ -6,12 +6,12 @@ TensorFlowOnSpark provides a framework for running TensorFlow on Apache Spark. I
 
 ### Prerequisites
 
-We assume that all Spark programs will be executed in Spark standalone mode and users have an root privileges to all nodes in the clusters. 
+Follow the instruction in [Launch a Spark Cluster](https://kitwaicloud.github.io/launchcluster/launchcluster.html) to lauch a Spark cluster on Kitwai system. 
 
-Following is the list of prerequisite for installing TensorFlowOnSpark. 
+To lauch GPU cluster, select 
 
-* Apache Spark 1.6.0+
-* Python 2.7+ or 3.5+
+![alt text]()
+
 
 ### Installing TensorFlowOnSpark
 
