@@ -10,8 +10,7 @@ Follow the instruction in [Launch a Spark Cluster](https://kitwaicloud.github.io
 
 To lauch GPU cluster, select `tensorflow-on-spark` as cluster template and `Kitwai 1.2 - Spark 2.2.0 - Jupyter 4.4 - CentOS 7.4 - GPU` as base image as shown here. 
 
-![alt text](https://github.com/kitwaicloud/kitwaicloud.github.io/blob/master/tensorflow_on_spark/launch_tensorflow_gpu_cluster.png)
-
+<img src="launch_tensorflow_gpu_cluster.png" width="600">
 
 ### Installing TensorFlowOnSpark
 
