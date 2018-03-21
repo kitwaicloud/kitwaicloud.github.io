@@ -8,9 +8,9 @@ TensorFlowOnSpark provides a framework for running TensorFlow on Apache Spark. I
 
 Follow the instruction in [Launch a Spark Cluster](https://kitwaicloud.github.io/launchcluster/launchcluster.html) to lauch a Spark cluster on Kitwai system. 
 
-To lauch GPU cluster, select 
+To lauch GPU cluster, select `tensorflow-on-spark` as cluster template and `Kitwai 1.2 - Spark 2.2.0 - Jupyter 4.4 - CentOS 7.4 - GPU` as base image as shown here. 
 
-![alt text]()
+![alt text](https://github.com/kitwaicloud/kitwaicloud.github.io/blob/master/tensorflow_on_spark/launch_gpu_cluster.png)
 
 
 ### Installing TensorFlowOnSpark
