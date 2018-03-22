@@ -14,7 +14,7 @@ For launching a spark cluster for running Big Data Analytics jobs on KitWai plat
 
    ​
 
-3. On Launch Cluster page, enter cluster name as your desired and select your key pair name which is imported in step of importing an user key pair. Ensure that the Cluster Template is set to kitwai-template. Then, click on Launch button.
+3. On Launch Cluster page, enter cluster name as your desired and select your key pair name which is imported in step of importing an user key pair. Ensure that the Cluster Template is set to kitwai-template. and Base Image is set to "KitWai 1.2 - spark 2.2.0 ..." Then, click on Launch button.
 
    <img src="launchcluster-3.png" width="600">
 
