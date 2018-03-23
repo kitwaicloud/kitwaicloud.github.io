@@ -2,10 +2,10 @@
 
 After the model is built and exported into PMML file, users can deploy the model in production. In this tutorial, we'll demonstrate how to use KitWai to launch and deploy a PMML model on an Openscoring cluster.
 
-An Openscoring cluster consists of a HAProxy and a number of Openscoring nodes. The HAProxy is exposed to the Internet and balance the prediction request to all Openscoring nodes.
+An Openscoring cluster consists of a HAProxy and a number of Openscoring nodes. The HAProxy is exposed to the Internet and balance the prediction request to all Openscoring nodes. Users can scale up/down the Openscoring cluster on demand.
 
 ## 1. Upload the PMML model into Swift storage
-Assume a PMML model in /tmp/churn.pmml. Refer to [Train a Machine Learning Model with Jupyter Notebook](/jupyter/jupyter.md) for building such a model.
+Assume a PMML model in /tmp/churn.pmml. Refer to [Train a Machine Learning Model with Jupyter Notebook](/jupyter/jupyter.html) for building such a model.
 
 Open a console terminal in Jupyter notebook. Use swift command to upload the model.
 
@@ -32,7 +32,7 @@ churn.pmml
 
 ## 2. Launch an Openscoring cluster with a PMML model
 
-Similar to [Launch a Spark Cluster](/launchcluster/launchcluster.md) except the following steps
+Similar to [Launch a Spark Cluster](/launchcluster/launchcluster.html) except the following steps
 
 Select Openscoring plugin
 
@@ -84,3 +84,13 @@ print (result)
 ```
 
 The result returned from Openscoring is of DataFrame type.
+
+## 3. Scale Openscoring cluster on demand
+
+Click on Scale after the Openscoring cluster.
+
+   <img src="openscoring_scale.png" width="300">
+
+Adjust the number of workers as needed.
+
+   <img src="openscoring_add_workers.png" width="300">
