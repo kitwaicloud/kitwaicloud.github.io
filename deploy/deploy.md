@@ -85,7 +85,7 @@ print (result)
 
 The result returned from Openscoring is of DataFrame type.
 
-## 3. Scale Openscoring cluster on demand
+## 4. Scale Openscoring cluster on demand
 
 Click on Scale after the Openscoring cluster.
 
