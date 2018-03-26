@@ -2,7 +2,7 @@
 
 This example shows how to run a deeplearning4j example on spark cluster. The example is to train a multi-layer neural network model to recognize hand-written digits from the MNIST dataset.
 
-## 1. SSH to the master node
+## 1. SSH to the master node. Use login "centos" and your key pair.
 
 ## 2. Download MNIST dataset
 
