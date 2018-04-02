@@ -26,6 +26,8 @@ TensorFlow with GPU support
 sudo pip install tensorflow-gpu   
 ```
 
+For low-memory machine, uses `--no-cache-dir` option when installing to avoid memory error during installation. 
+
 Next step is to install TensorFlowOnSpark by using following command. 
 ```
 sudo pip install tensorflowonspark
