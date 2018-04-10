@@ -28,6 +28,8 @@ sudo pip install tensorflow-gpu
 
 For low-memory machine, uses `--no-cache-dir` option when installing to avoid memory error during installation. 
 
+TensorFlow with GPU support requires NVIDIA CUDA Deep Neural Network library (cuDNN), which can be download from [here](https://developer.nvidia.com/cudnn)
+
 Next step is to install TensorFlowOnSpark by using following command. 
 ```
 sudo pip install tensorflowonspark
@@ -89,7 +91,15 @@ Multiple python scripts can also be compressed in a zip file and used in the sam
 
 TensorFlowOnSpark has support for accessing data inside HDFS. Only file paths to read and write data need to be changed to HDFS paths, e.g. `hdfs://namenode:8020/path/to/file.ext`.  
 
+## Troubleshooting
 
+#### Error `Error executing Jupyter command : [Errno 2] No such file or directory` when running `spark-submit`
 
+This is caused by Jupyter, which can be solved by unsetting following environment variables
+
+```
+unset PYSPARK_DRIVER_PYTHON
+unset PYSPARK_DRIVER_PYTHON_OPTS
+```
 
 
