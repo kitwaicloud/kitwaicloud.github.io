@@ -1,6 +1,6 @@
 # How to Create Node Group templates and a Cluster Template
 
-Before launching a spark cluster, you have to create node group templates and a cluster template first. A node group template contains configuration for a node in the cluster. The template includes configuration for Spark processes and VM specifications such as number of CPUs, amount of memory and storage capacity.  For cluster template, the template contains configuration that applies to the whole cluster, e.g. HDFS or Spark parameters. It also contains list of node group templates.  Please follow the instructions below on how to create node group templates and a cluster template.
+Before launching a spark cluster, you have to create node group templates and a cluster template first. A node group template contains configuration for a node in the cluster. The template includes configuration for Spark processes and VM specifications such as number of CPUs, amount of memory and storage capacity.  For cluster template, it contains configuration that applies to the whole cluster, e.g. HDFS or Spark parameters and also contains list of node group templates.  Please follow the instructions below on how to create node group templates and a cluster template.
 
 ## Create Node group templates
 
