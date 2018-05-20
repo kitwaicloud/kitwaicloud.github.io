@@ -10,45 +10,47 @@ Before launching a spark cluster, you have to create node group templates and a 
 
 2. This example, we will create two node group templates which consists of master and worker node group template. The master node runs spark master, HDFS name node, Jupyter and also ganglia master service. The worker node runs spark worker, HDFS data node and also ganglia slave service. In order to achieve the requirements, please follow the below instructions.
 
-   2.1 Create node group template named "master". 
+   #### **Create node group template named "master"** 
 
-   2.2 On Clusters panel, click on the "Create Template" button at the top right.
+   2.1 On Clusters panel, click on the "Create Template" button at the top right.
 
    <img src="nodegroupcreatetemplatebutton.png" width="500">
 
-   2.3 Choose KitWai Plugin name and Version 1.2 from the dropdowns and click "Next" button.
+   2.2 Choose KitWai Plugin name and Version 1.2 from the dropdowns and click "Next" button.
 
    <img src="nodegrouppanel.png" width="500">
 
-   2.4 On "Configure Node Group Template" tab. Fill out Template name as your desired and choose "OpenStack Flavor" to determine the size (VCPUs, memory and storage) of all launched VMs,  "Availability Zone" and "Floating IP Pool" which specifies public IP pool for each node group from dropdowns as shown image below. 
+   2.3 On "Configure Node Group Template" tab. Fill out Template name as your desired and choose "OpenStack Flavor" to determine the size (VCPUs, memory and storage) of all launched VMs,  "Availability Zone" and "Floating IP Pool" which specifies public IP pool for each node group from dropdowns as shown image below. 
 
    <img src="confignodegrouptemplate.png" width="300">
 
    
 
-   2.5 Switch to the "Node Processes" tab and choose which processes should be run for spark master instance that are spawned from this Node Group Template as shown image below.
+   2.4 Switch to the "Node Processes" tab and choose which processes should be run for spark master instance that are spawned from this Node Group Template as shown image below.
 
    <img src="nodeprocesses.png" width="500">
 
-   2.6 Switch to "Security" tab, select "Security Groups" as default for applying firewall rules to all instances and click on "Create" button to finish creating the node group template.
+   2.5 Switch to "Security" tab, select "Security Groups" as default for applying firewall rules to all instances and click on "Create" button to finish creating the node group template.
 
    <img src="securitygroup.png" width="450">
 
-   2.7 You will see master node group lists in Clusters panel after creating the node group has finished.
+   2.6 You will see master node group lists in Clusters panel after creating the node group has finished.
 
    <img src="mastercreated.png" width="500">
 
-   2.8 Next, create another one node group template named worker node.
+   
 
-   2.9 Repeat in step 2.2 to 2.4
+   #### **Create another one node group template named worker node**
 
-   2.9 On the "Node Processes" tab, choose which processes should be run for spark worker instance that are spawned from this Node Group Template as shown image below.
+   2.7 Repeat in step 2.1 to 2.3
+
+   2.8 On the "Node Processes" tab, choose which processes should be run for spark worker instance that are spawned from this Node Group Template as shown image below.
 
    <img src="nodegroupworkerprocesses.png" width="400">
 
-   2.10 Repeat in step 2.6 for choosing security group.
+   2.9 Repeat in step 2.5 for choosing security group.
 
-   2.11 You will see worker node group template lists in Clusters panel after creating the node group has finished.
+   2.10 You will see worker node group template lists in Clusters panel after creating the node group has finished.
 
    <img src="workercreated.png" width="500">
 
