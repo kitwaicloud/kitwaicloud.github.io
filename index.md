@@ -22,7 +22,7 @@ For more information, contact kitwai _at_ nectec _dot_ or _dot_ th
 - [How to Deploy a Spark ML Model](deploy/deploy.md)
 - [Deep Learning with DeepLearning4J](dl4j/dl4j.md)
 - [Deep Learning with TensorFlow on Spark](tensorflow_on_spark/tensorflow_on_spark.md)
-- [How to Create a Cluster Template](create_template/create_template.md)
+- [How to Create Node Group Templates and a Cluster Template](create_template/create_template.md)
 - [Using API Libraries to Operate KitWai](apis/apis.md)
 - [SparkSQL and JDBC Connnection](sparksql/sparksql.md)
 - [Using Zeppelin Notebook for Spark Programming in Scala](zeppelin/zeppelin.md)
