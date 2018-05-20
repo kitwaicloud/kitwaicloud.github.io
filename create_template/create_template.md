@@ -8,47 +8,47 @@ Before launching a spark cluster, you have to create node group templates and a 
 
    <img src="nodegroupmenu.png" width="500">
 
-2. This example, we will create two node group template which consists of master and worker node group template. The master node runs spark master, HDFS name node, Jupyter and also ganglia master  service. The worker node runs spark worker, HDFS data node and also ganglia slave service. In order to achieve the requirements, please follow the below instructions.
+2. This example, we will create two node group templates which consists of master and worker node group template. The master node runs spark master, HDFS name node, Jupyter and also ganglia master service. The worker node runs spark worker, HDFS data node and also ganglia slave service. In order to achieve the requirements, please follow the below instructions.
 
    2.1 Create node group template named "master". 
 
-   2.2 On Clusters panel, click on the “Create Template” button at the top right.
+   2.2 On Clusters panel, click on the "Create Template" button at the top right.
 
    <img src="nodegroupcreatetemplatebutton.png" width="500">
 
-   2.3 Choose KitWai Plugin name and Version 1.2 from the dropdowns and click “Next”
+   2.3 Choose KitWai Plugin name and Version 1.2 from the dropdowns and click "Next" button.
 
    <img src="nodegrouppanel.png" width="500">
 
-   2.4 On Configure Node Group Template tab. Fill out Template name as your desired and choose OpenStack Flavor to determine the size (VCPUs, memory and storage) of all launched VMs,  Availability Zone and Floating IP Pool which specifies public IP pool for each node group from dropdown list as below image. 
+   2.4 On "Configure Node Group Template" tab. Fill out Template name as your desired and choose "OpenStack Flavor" to determine the size (VCPUs, memory and storage) of all launched VMs,  "Availability Zone" and "Floating IP Pool" which specifies public IP pool for each node group from dropdowns as shown image below. 
 
    <img src="confignodegrouptemplate.png" width="300">
 
    
 
-   2.5 Switch to the Node Processes tab and choose which processes should be run for spark master instance that are spawned from this Node Group Template as below image.
+   2.5 Switch to the "Node Processes" tab and choose which processes should be run for spark master instance that are spawned from this Node Group Template as shown image below.
 
    <img src="nodeprocesses.png" width="500">
 
-   2.6 Switch to Security tab, select Security Groups as default for applying firewall rules to all instances and click on create button to finish creating the node group template.
+   2.6 Switch to "Security" tab, select "Security Groups" as default for applying firewall rules to all instances and click on "Create" button to finish creating the node group template.
 
    <img src="securitygroup.png" width="450">
 
-   2.7 You will see master node group lists in Clusters panel after creating the node group has done.
+   2.7 You will see master node group lists in Clusters panel after creating the node group has finished.
 
    <img src="mastercreated.png" width="500">
 
    2.8 Next, create another one node group template named worker node.
 
-   2.9 Repeat step 2.2 to 2.4
+   2.9 Repeat in step 2.2 to 2.4
 
-   2.9 On the Node Processes tab, choose which processes should be run for spark worker instance that are spawned from this Node Group Template as below image.
+   2.9 On the "Node Processes" tab, choose which processes should be run for spark worker instance that are spawned from this Node Group Template as shown image below.
 
    <img src="nodegroupworkerprocesses.png" width="400">
 
-   2.10 Repeat in step 2.6.
+   2.10 Repeat in step 2.6 for choosing security group.
 
-   2.11 You will see worker node group template lists in Clusters panel after creating the node group has done.
+   2.11 You will see worker node group template lists in Clusters panel after creating the node group has finished.
 
    <img src="workercreated.png" width="500">
 
@@ -62,23 +62,23 @@ Before launching a spark cluster, you have to create node group templates and a 
 
 2. From that page, click on the "Create Template" button at the top right.
 
-3. Choose Plugin name as KitWai and Version 1.2 from the dropdowns and click on Next button.
+3. Choose Plugin name as KitWai and Version 1.2 from the dropdowns and click on "Next" button.
 
    <img src="clustertemplateplugin.png" width="500">
 
-4. Under the “Details” tab, fill out template a name as your desired.
+4. Under the "Details" tab, fill out template a name as your desired.
 
    <img src="clustertemplatedetails.png" width="500">
 
-5. Switch to Node Groups tab,  We can choose created node group template from "Select a Node Group Template to add" dropdown list and click on "+" button for adding them into cluster template. We can adjust number of instance in each node group template by click on "+" and "-" button. 
+5. Switch to "Node Groups" tab,  We can choose created node group template from "Select a Node Group Template to add" dropdown list and click on "+" button for adding them into cluster template. We can adjust number of instance in each node group template by click on "+" and "-" button. 
 
    <img src="clustertemplateaddnode.png" width="550">
 
-6. Switch to HDFS Parameters tab, set dfs.replication value to "1". The dfs.replication factor have to less than or equal to number of spark worker node. Click on "Create" button to finish creating cluster template.
+6. Switch to "HDFS Parameters" tab, set dfs.replication value to "1". The dfs.replication factor have to less than or equal to number of spark worker node. Click on "Create" button to finish creating cluster template.
 
    <img src="clustertemplategeneral.png" width="500">
 
-7. The template will list on Cluster panel.
+7. The Cluster template is listed on Cluster panel, the template has been successfully created.
 
    <img src="clustertemplatecreated.png" width="500">
 
