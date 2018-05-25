@@ -9,12 +9,19 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 For more information, contact kitwai _at_ nectec _dot_ or _dot_ th
 
 ## Basics
+This section provides a step-by-stop from launching a cluster to training and deploying an ML model using Spark. 
 1. [Overview](overview.md)
 2. [Login to KitWai and Import KeyPair](login/login.md)
 3. [Launch a Spark Cluster](launchcluster/launchcluster.md)
 4. [Verify and Check Spark Cluster Status](status/status.md)
 5. [Train a Machine Learning Model with Jupyter Notebook](jupyter/jupyter.md)
 6. [Terminate Spark Cluster after Use](terminate/terminate.md)
+
+## Storing and exploring data with ELK stack
+1. [Launch an ELK Cluster](elk/launchcluster.md)
+2. [Load Data](elk/loaddata.md)
+3. [Explore Data with Kibana](elk/kibana.md)
+4. [Create a Dashbard in Grafana](elk/grafana.md)
 
 ## Other Tasks
 - [Working with Data in Swift Object Storage](swift/swift.md)

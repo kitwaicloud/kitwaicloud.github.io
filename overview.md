@@ -7,8 +7,12 @@ KitWai consists of the following components.
 
 | Layer | Component |
 |----|----|
-| Tools and utilities | Ganglia Monitoring, Thrift JDBC connection, Jupyter/Zeppelin Notebook, RStudio Server |
-| Distributed computing platform for big data analytics | Hadoop HDFS 2.7.1, Spark 2.2.0, Flink 1.4.0, Kafka 1.0.0, Tensorflow on Spark|
+| Tools and utilities<sup>1</sup> | Ganglia Monitoring, Thrift JDBC connection, Jupyter/Zeppelin Notebook, RStudio Server |
+| Distributed computing platform for big data analytics | Spark 2.2.0, Flink 1.4.0, Tensorflow on Spark|
+| Data exploration and visualization   |  Kibana 6.2.4, Grafana 5.1.3 |
+| Distributed data streaming and storage platform | Hadoop HDFS 2.7.1, Elasticsearch 6.2.4, Kafka 1.0.0|
 | Cloud-based resource management  | CentOS 7.4, Openstack Pike (Nova, Cinder, Swift, Sahara, Glance, Neutron), Nvidia GPU support, KVM Hypervisor and LXC Linux Container Support |
 
-Several python packages are already installed in the cluster, including numpy, pandas, matplotlib, etc. Additionally, there exist Java and Scala compilers available too.
+KitWai is not limited to be installed on bare-metal machines. Thanks to LXC container, virtual machine environment is also supported.
+
+<sup>1</sup> Several python packages are already installed in the cluster, including numpy, pandas, matplotlib, etc. Additionally, Java and Scala compilers are pre-installed too.
