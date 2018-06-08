@@ -9,7 +9,7 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 For more information, contact kitwai _at_ nectec _dot_ or _dot_ th
 
 ## Basics
-This section provides a step-by-stop from launching a cluster to training and deploying an ML model using Spark. 
+This section provides a step-by-stop from launching a cluster to training and deploying an ML model using Spark.
 1. [Overview](overview.md)
 2. [Login to KitWai and Import KeyPair](login/login.md)
 3. [Launch a Spark Cluster](launchcluster/launchcluster.md)
@@ -22,6 +22,9 @@ This section provides a step-by-stop from launching a cluster to training and de
 2. [Load Data](elk/loaddata.md)
 3. [Explore Data with Kibana](elk/kibana.md)
 4. [Create a Dashbard in Grafana](elk/grafana.md)
+
+## Specific Tasks
+- [Running Integrated Meta-omic Pipeline (IMP) for Bioinformatic Analysis](imp/imp.md)
 
 ## Other Tasks
 - [Working with Data in Swift Object Storage](swift/swift.md)
