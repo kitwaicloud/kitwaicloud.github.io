@@ -2,7 +2,8 @@
 
 [IMP](http://r3lab.uni.lu/web/imp/) is a workflow engine to automate integrated analysis of the multi-omic data. IMP can be run in a docker container to ensure that it can run  with all dependency libraries under isolated environment. Here, we show how to launch a VM instance with IMP on KitWai Cloud platform.
 
-## 1. First, a user must have an account and imported keypairs. Follow the instructions [here](/login/login.md) if necessary.
+## 1. First, a user must have an account and imported keypairs.
+Follow the instructions [here](../login/login.md) if necessary.
 
 ## 2. Launch an IMP instance.
 
@@ -10,7 +11,7 @@
    <img src="launch_instance.png">
 
 2.2. The Launch Instance will pop up. Input the instance name, e.g. _test_. The instance name must not be duplicated with other instances.
-   ​<img src="details.png" width=600>
+   ​<img src="details.png" width="600">
 
 2.3. Then, select the IMP image source. Be sure to set Create New Volume to NO.
    ​<img src="source.png">
@@ -31,16 +32,16 @@
 
 4.2. Click at plus button to allocate a new floating IP.
 
-   ​<img src="new_ip.png" width=400>
+   ​<img src="new_ip.png" width="400">
 
 4.3. Click at Allocate IP button.
 
-   ​<img src="allocate_ip.png" width=400>
+   ​<img src="allocate_ip.png" width="400">
 
 4.4. Now, you obtain a floating IP which is shown in IP Address box. Then, click at Associate button.
 
-   ​<img src="associate.png" width=400>
+   ​<img src="associate.png" width="400">
 
 4.5. The floating IP is already assigned to your VM instance which is shown in the Instances page. Take note of your floating IP. You will have to use this floating IP to login to the VM.
 
-   ​<img src="associated.png">
+   ​<img src="associated.png" width="400">

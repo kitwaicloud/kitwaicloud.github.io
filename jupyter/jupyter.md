@@ -759,7 +759,7 @@ Users can try to adjust training parameters to improve the accuracy of predictio
 
 ## 7. Export the trained model for deployment
 
-Export the model into PMML format. The PMML file can be downloaded and deployed with other tools such as [Openscoring](https://github.com/openscoring/openscoring). Users can also deploy the PMML model with KitWai Openscoring cluster. See [How to Deploy a Spark ML Model](/deploy/deploy.md) for more details.
+Export the model into PMML format. The PMML file can be downloaded and deployed with other tools such as [Openscoring](https://github.com/openscoring/openscoring). Users can also deploy the PMML model with KitWai Openscoring cluster. See [How to Deploy a Spark ML Model](../deploy/deploy.md) for more details.
 
 ```python
 from jpmml_sparkml import toPMMLBytes
