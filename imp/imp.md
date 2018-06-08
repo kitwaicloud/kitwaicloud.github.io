@@ -46,7 +46,7 @@ Follow the instructions [here](../login/login.md) if necessary.
 
    ​<img src="associated.png" width="400">
 
-## Login to your VM and submit a job
+## 5. Login to your VM and submit a job
 Use secure shell (linux) to login to the VM. The user name is _centos_ and VM ip address is the floating IP.
 
 ```shell
@@ -66,3 +66,8 @@ cd IMP/test
 impy --threads 8 --memtotal 16 --memcore 2 -e IMP_SUDO=sudo -d /home/centos/small-db -c /home/centos/IMP/test/default.conf.json run -m mg.r1.fq -m mg.r2.fq -t mt.r1.fq  -t mt.r2.fq
 ```
 The job should spend around 1.5-2 hours to finish.
+
+## 6. Terminiate IMP instance
+After the instance is no longer used, it should be terminated. On the Instance page, click on the drop down list and select Delete Instance.
+
+   ​<img src="terminate.png" width="400">
