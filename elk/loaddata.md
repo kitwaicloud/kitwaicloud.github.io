@@ -1,6 +1,6 @@
 # Load Data into Elasticsearch
 
-[OpenWeatherMap](https://openweathermap.org/) provides the current and forecast weather information. Here, we'll use logstash to ingest data from  into elasticsearch.
+[OpenWeatherMap](https://openweathermap.org/) provides the current and forecast weather information. Here, we'll use logstash to ingest data from OpenWeatherMap into elasticsearch.
 
 
 ## Prerequisites
@@ -46,9 +46,11 @@ Go back to the Cerebro overview page. Now an empty index (docs: 0) is created.
 Note that login to any node would work, actually.
 
 Find the IP address of the client node. Click on the cluster name to see the general information of the cluster.
+
    <img src="cluster_info.png" width="400">
 
 The IP adress and port of services on all nodes are shown. Take note of the IP address of the client node shown in _coordinating-only_.
+
    <img src="ip_port.png" width="250">
 
 Use ssh tool to login to the client node. Remember to use the matching keypair.
@@ -58,7 +60,9 @@ ssh centos@<CLIENT_IP>
 ```
 
 ## 3. Create logstash config
-Create the weather.conf file for logstash. There are three sections: input, filter and output, which defines how to get weather data from the OpenWeatherMap service, transform them and load into Elasticsearch.
+Create the weather.conf file for logstash. There are three sections: input, filter and output, which define how to get weather data from the OpenWeatherMap service, transform them and load into Elasticsearch.
+
+Replace _APPID_ with yours.
 
 ```shell
 input {
@@ -114,7 +118,7 @@ output {
 }
 ```
 
-In this example, the input section defines the http poller to retrieve the current weather from OpenWeatherMap every 15 minutes. Replace _APPID_ with yours. Due to the free service, it allows up to 50 stations around the center point. The center in the example is located at Bangkok. The filter section defines the transformation of OpenWeaterMap data for indexing in ELK cluster. Shortly, it extracts nested fields into the root and creates timestamp. The output section load each station data into Elasticsearch. Each document has an ID set to stationID_timestamp. Note that these data is updated with 30-min interval.
+In this example, the input section defines the http poller to retrieve the current weather from OpenWeatherMap every 15 minutes. Due to the free service, it allows up to 50 stations around the center point. The center in the example is located at Bangkok. The filter section defines the transformation of OpenWeaterMap data for indexing in ELK cluster. Shortly, it extracts relevant fields from nested structure and put them into the root and creates timestamp. The output section load each station data into Elasticsearch. Each document has an ID set to stationID_timestamp. Note that these data is updated with 30-min interval. So, our 15-min polling is enough.
 
 ## 4. Run logstash
 
