@@ -1,6 +1,6 @@
 # Load Data into Elasticsearch
 
-[OpenWeatherMap](https://openweathermap.org/) provides the current and forecast weather information. Here, we'll use logstash to ingest data from OpenWeatherMap into elasticsearch.
+For demonstration purpose, we will feed weather data from [OpenWeatherMap](https://openweathermap.org/) into Elasticsearch. Here, we'll use logstash to ingest data from OpenWeatherMap into elasticsearch.
 
 
 ## Prerequisites
@@ -18,7 +18,7 @@ Enter the index name "_weather_" and select "_PUT_". Copy and paste the followin
   "doc": {
    "properties": {
     "id": {"type" : "long"},
-    "name": {"type" : "text"},
+    "name": {"type" : "keyword"},
     "rain": {"type" : "float"},
     "temp": {"type" : "float"},
     "humidity": {"type" : "float"},
@@ -118,15 +118,28 @@ output {
 }
 ```
 
-In this example, the input section defines the http poller to retrieve the current weather from OpenWeatherMap every 15 minutes. Due to the free service, it allows up to 50 stations around the center point. The center in the example is located at Bangkok. The filter section defines the transformation of OpenWeaterMap data for indexing in ELK cluster. Shortly, it extracts relevant fields from nested structure and put them into the root and creates timestamp. The output section load each station data into Elasticsearch. Each document has an ID set to stationID_timestamp. Note that these data is updated with 30-min interval. So, our 15-min polling is enough.
+In this example, the input section defines the http poller to retrieve the current weather from OpenWeatherMap every 15 minutes. Due to the free service, it allows up to 50 stations around the center point, and the data is from last hour. The center in the example is located at Bangkok. Several [input plugins](https://www.elastic.co/guide/en/logstash/current/input-plugins.html) are available.
+
+The filter section defines the transformation of OpenWeaterMap data for indexing in ELK cluster. Shortly, it extracts relevant fields from nested structure and put them into the root and creates timestamp. The output section load each station data into Elasticsearch. Each document has an ID set to stationID_timestamp. Note that these data is updated with 30-min interval. So, our 15-min polling is enough.
 
 ## 4. Run logstash
 
-Run the following command. Keep it running in background.
+Run the following command. Keep it running.
 
 ```shell
-/opt/logstash/bin/logstash -w 1 -f weather.conf &
+/opt/logstash/bin/logstash -w 1 -f weather.conf
 ```
-After 15 min, the first set of data will be injected into Elasticsearch.
+After 15 min, data will continuously be injected into Elasticsearch.
 
    <img src="doc_count.png" width="150">
+
+## 5. Explore and visualize data
+
+On the cluster general information page, click on the Kibana URL. From Kibana page, create an index pattern and start discovering and visualizing data.
+
+   <img src="weather_discover.png" width="300">
+
+
+User may create a grafana dashboard as shown below.
+
+   <img src="grafana_temperature.png" width="300">

@@ -17,11 +17,14 @@ This section provides a step-by-stop from launching a cluster to training and de
 5. [Train a Machine Learning Model with Jupyter Notebook](jupyter/jupyter.md)
 6. [Terminate Spark Cluster after Use](terminate/terminate.md)
 
-## Storing and exploring data with ELK stack 
+## Storing and exploring data with ELK stack
 1. [Launch an ELK Cluster](elk/launchcluster.md)
+2. [Example Usage](elk/weather.md)
+<!--
 2. [Load Data](elk/loaddata.md)
 3. [Explore Data with Kibana](elk/kibana.md)
 4. [Create a Dashbard in Grafana](elk/grafana.md)
+-->
 
 ## Specific Tasks
 - [Running Integrated Meta-omic Pipeline (IMP) for Bioinformatic Analysis](imp/imp.md)
