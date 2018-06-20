@@ -18,8 +18,10 @@ This section provides a step-by-stop from launching a cluster to training and de
 6. [Terminate Spark Cluster after Use](terminate/terminate.md)
 
 ## Storing and exploring data with ELK stack
+Use the ELK (Elasticsearch Logstash and Kibana) stack to store, explore and visualize data.
 1. [Launch an ELK Cluster](elk/launchcluster.md)
-2. [Example Usage](elk/weather.md)
+2. [Scale an ELK Cluster](elk/scale.md)
+3. [Example Usage](elk/weather.md)
 <!--- 2. [Load Data](elk/loaddata.md) --->
 <!--- 3. [Explore Data with Kibana](elk/kibana.md) --->
 <!--- 4. [Create a Dashbard in Grafana](elk/grafana.md) --->
