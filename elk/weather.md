@@ -140,6 +140,10 @@ On the cluster general information page, click on the Kibana URL. From Kibana pa
    <img src="weather_discover.png" width="300">
 
 
+   <img src="kibana_temperature.png" width="300">
+
+
+
 User may create a grafana dashboard as shown below.
 
    <img src="grafana_temperature.png" width="300">
