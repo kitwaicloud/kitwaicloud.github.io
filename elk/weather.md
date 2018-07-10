@@ -1,6 +1,6 @@
 # Load Data into Elasticsearch
 
-For demonstration purpose, we will feed weather data from [OpenWeatherMap](https://openweathermap.org/) into Elasticsearch. Here, we'll use logstash to ingest data from OpenWeatherMap into elasticsearch.
+For demonstration purpose, we will feed weather data from [OpenWeatherMap](https://openweathermap.org/) into Elasticsearch. Here, we'll use logstash to ingest data from OpenWeatherMap into elasticsearch. Please see [more examples](logstash.md) of logstash configurations.
 
 
 ## Prerequisites

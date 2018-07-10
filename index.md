@@ -22,6 +22,7 @@ Use the ELK (Elasticsearch Logstash and Kibana) stack to store, explore and visu
 1. [Launch an ELK Cluster](elk/launchcluster.md)
 2. [Scale an ELK Cluster](elk/scale_elk.md)
 3. [Example Usage](elk/weather.md)
+4. [Using Logstash to Ingest Data](elk/logstash.md)
 <!--- 2. [Load Data](elk/loaddata.md) --->
 <!--- 3. [Explore Data with Kibana](elk/kibana.md) --->
 <!--- 4. [Create a Dashbard in Grafana](elk/grafana.md) --->
