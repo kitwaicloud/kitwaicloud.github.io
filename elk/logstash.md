@@ -5,6 +5,7 @@ Logstash configuration consists of three sections: input, filter, and output, wh
 In the following configuration, data is sent over an HTTP request. The body content contains a single line of ID, moisture, temperature and light in CSV format. The http plugin will create a logstash internal data structure from the CSV input. The csv filter will extract the data from CSV into fields. The mutate filter removes unused fields from the http plugin. Finally, the output is sent to Elasticsearch and stdout. Since there is no timestamp in data, the logstash will create a timestamp field by using system time. User and password are optional for the http plugin. Comment begins with #.
 
 ```shell
+# Example logstash config
 input {
   http {
     port => "80"
@@ -33,6 +34,33 @@ output {
     index => "sensor"
   }
   stdout {}
+}
+```
+
+The sensor index should have the following mappings.
+
+```json
+{
+  "sensor": {
+    "mappings": {
+      "doc": {
+        "properties": {
+          "Light": {
+            "type": "float"
+          },
+          "Moisture": {
+            "type": "float"
+          },
+          "Temperature": {
+            "type": "float"
+          },
+          "ID": {
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  }
 }
 ```
 
