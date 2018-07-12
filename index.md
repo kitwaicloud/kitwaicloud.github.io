@@ -8,7 +8,7 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 
 For more information, contact kitwai _at_ nectec _dot_ or _dot_ th
 
-## Basics
+## Spark Basics
 This section provides a step-by-stop from launching a cluster to training and deploying an ML model using Spark.
 1. [Overview](overview.md)
 2. [Login to KitWai and Import KeyPair](login/login.md)
@@ -17,7 +17,11 @@ This section provides a step-by-stop from launching a cluster to training and de
 5. [Train a Machine Learning Model with Jupyter Notebook](jupyter/jupyter.md)
 6. [Terminate Spark Cluster after Use](terminate/terminate.md)
 
-## Storing and exploring data with ELK stack
+**Other Tasks**
+- [How to Deploy a Spark ML Model](deploy/deploy.md)
+- [Using Zeppelin Notebook for Spark](zeppelin/zeppelin.md)
+
+## Storing and Exploring Data with ELK Stack
 Use the ELK (Elasticsearch Logstash and Kibana) stack to store, explore and visualize data.
 1. [Launch an ELK Cluster](elk/launchcluster.md)
 2. [Scale an ELK Cluster](elk/scale_elk.md)
@@ -30,16 +34,14 @@ Use the ELK (Elasticsearch Logstash and Kibana) stack to store, explore and visu
 ## Specific Tasks
 - [Running Integrated Meta-omic Pipeline (IMP) for Bioinformatic Analysis](imp/imp.md)
 
-## Other Tasks
+## Additional Topics
 - [Working with Data in Swift Object Storage](swift/swift.md)
 - [Product Recommendation Example](als/als.md)
-- [How to Deploy a Spark ML Model](deploy/deploy.md)
 - [Deep Learning with DeepLearning4J](dl4j/dl4j.md)
 - [Deep Learning with TensorFlow on Spark](tensorflow_on_spark/tensorflow_on_spark.md)
 - [How to Create Node Group Templates and a Cluster Template](create_template/create_template.md)
 - [Using API Libraries to Operate KitWai](apis/apis.md)
-- [SparkSQL and JDBC Connnection](sparksql/sparksql.md)
-- [Using Zeppelin Notebook for Spark Programming in Scala](zeppelin/zeppelin.md)
+- [SparkSQL and JDBC Connection](sparksql/sparksql.md)
 - [Launch a Flink Cluster](launchflink/launchflink.md)
 
 ## Further Readings
