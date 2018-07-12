@@ -3,7 +3,7 @@
 Zeppelin is a web-based notebook for interactive programming and data visualization in browser. It supports many programming languages via Zeppelin interpreters such as scala, python, R, SQL and Bash.
 
 ## Start a Zeppelin node
-First, launch a spark cluster as described previously [here](/launchcluster/launchcluster.md). Then, click on the "Scale Cluster" button.
+First, launch a spark cluster as described previously [here](../launchcluster/launchcluster.md). Then, click on the "Scale Cluster" button.
 
 <img src="click_scale_cluster.png" width="400">
 
@@ -16,7 +16,7 @@ After the cluster has finished scaling, click on the zeppelin URL to bring up th
 ## Create a notebook
 Let's create a new notebook.
 
-<img src="create_new_note.png" width="300">
+<img src="create_new_note.png" width="200">
 
 Enter the note name, e.g. Bank and click Create.
 
@@ -89,4 +89,5 @@ select job, count(1) from bank group by job order by count(1) desc
 ```
 
 We can adjust size and layout of the paragraphs as follows.
+
 <img src="charts.png" width="600">
