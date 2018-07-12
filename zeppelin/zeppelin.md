@@ -3,24 +3,24 @@
 Zeppelin is a web-based notebook for interactive programming and data visualization in browser. It supports many programming languages via Zeppelin interpreters such as scala, python, R, SQL and Bash.
 
 ## Start a Zeppelin node
-First, launch a spark cluster as described previously [here](launchcluster/launchcluster.md). Then, click on the "Scale Cluster" button.
+First, launch a spark cluster as described previously [here](/launchcluster/launchcluster.md). Then, click on the "Scale Cluster" button.
 
-<img src="click_scale_cluster.png">
+<img src="click_scale_cluster.png" width="400">
 
 Add a zeppelin node group and click Scale.
 
-<img src="add_zeppelin_node_group.png">
+<img src="add_zeppelin_node_group.png" width="400">
 
 After the cluster has finished scaling, click on the zeppelin URL to bring up the Zeppelin front page.
 
 ## Create a notebook
 Let's create a new notebook.
 
-<img src="create_new_note.png">
+<img src="create_new_note.png" width="300">
 
 Enter the note name, e.g. Bank and click Create.
 
-<img src="create_new_note.png">
+<img src="note_name.png" width="300">
 
 
 ## Load sample data
@@ -32,7 +32,7 @@ wget http://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank.zip
 unzip bank.zip
 hdfs dfs -put bank-full.csv /user/centos
 ```
-<img src="load_data.png">
+<img src="load_data.png" width="400">
 
 The sample data looks like:
 ```
@@ -72,11 +72,11 @@ select age, count(1) from bank group by age order by age
 
 The query result is shown in table by default.
 
-<img src="sql_table_result.png">
+<img src="sql_table_result.png" width="400">
 
 Click on the Area Chart button to change the display of the result.
 
-<img src="sql_area_chart.png">
+<img src="sql_area_chart.png" width="400">
 
 In the next paragraph, create a pie chart with the following query.
 ```sql
@@ -87,4 +87,6 @@ Then a bar chart with query:
 ```sql
 select job, count(1) from bank group by job order by count(1) desc
 ```
-<img src="charts.png" width="400">
+
+We can adjust size and layout of the paragraphs as follows.
+<img src="charts.png" width="600">
