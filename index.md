@@ -9,7 +9,7 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 For more information, contact kitwai _at_ nectec _dot_ or _dot_ th
 
 ## Spark Basics
-This section provides a step-by-stop from launching a cluster to training and deploying an ML model using Spark.
+This section provides a step-by-step from launching a cluster to training and deploying an ML model using Spark.
 1. [Overview](overview.md)
 2. [Login to KitWai and Import KeyPair](login/login.md)
 3. [Launch a Spark Cluster](launchcluster/launchcluster.md)
@@ -32,7 +32,8 @@ Use the ELK (Elasticsearch Logstash and Kibana) stack to store, explore and visu
 <!--- 4. [Create a Dashbard in Grafana](elk/grafana.md) --->
 
 **Example Usage**
-- [Load and explore weather data with ELK Cluster](elk/weather.md)
+- [Load and Explore Weather Data with ELK Cluster](elk/weather.md)
+- [Work with Historical and Real-Time Air Quality Data from OpenAQ](elk/openaq.md)
 
 ## Specific Tasks
 - [Running Integrated Meta-omic Pipeline (IMP) for Bioinformatic Analysis](imp/imp.md)
