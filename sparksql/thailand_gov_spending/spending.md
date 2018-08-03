@@ -37,7 +37,7 @@ Similarly, corporate records appear several times as well.
 Records in budget_id are always duplicated according to the number of sub-contracts of a project.  
 
 ## Launch a Spark cluster with Superset
-Follow this [guide](../../launchcluster.md) to launch a Spark cluster.
+Follow this [guide](../../launchcluster/launchcluster.md) to launch a Spark cluster.
 
 Then, click on Scale to add a superset node.
 
