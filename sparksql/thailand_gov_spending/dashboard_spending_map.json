@@ -1,0 +1,350 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "changed_by_fk": 1,
+                "slug": null,
+                "css": "",
+                "position_json": "[\n    {\n        \"col\": 1,\n        \"row\": 0,\n        \"size_x\": 16,\n        \"size_y\": 16,\n        \"slice_id\": \"15\"\n    },\n    {\n        \"col\": 18,\n        \"row\": 0,\n        \"size_x\": 16,\n        \"size_y\": 16,\n        \"slice_id\": \"16\"\n    }\n]",
+                "dashboard_title": "Spending Map",
+                "changed_on": {
+                    "__datetime__": "2018-08-02T17:52:32"
+                },
+                "created_by_fk": 1,
+                "json_metadata": "{\"filter_immune_slices\": [], \"timed_refresh_immune_slices\": [], \"filter_immune_slice_fields\": {}, \"expanded_slices\": {}, \"default_filters\": \"{}\", \"remote_id\": 4}",
+                "description": null,
+                "id": 4,
+                "created_on": {
+                    "__datetime__": "2018-08-02T17:45:12"
+                },
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"17__table\", \"viz_type\": \"country_map\", \"granularity_sqla\": null, \"time_grain_sqla\": null, \"since\": \"100 years ago\", \"until\": \"now\", \"entity\": \"iso\", \"metric\": {\"expressionType\": \"SIMPLE\", \"column\": {\"column_name\": \"price\", \"verbose_name\": null, \"description\": null, \"expression\": \"\", \"filterable\": false, \"groupby\": false, \"is_dttm\": false, \"type\": \"DOUBLE_TYPE\", \"optionName\": \"_col_price\"}, \"aggregate\": \"SUM\", \"sqlExpression\": null, \"hasCustomLabel\": false, \"fromFormData\": false, \"label\": \"SUM(price)\", \"optionName\": \"metric_pzcp9d2kcmp_7tn50rd5zwd\"}, \"adhoc_filters\": null, \"select_country\": \"Thailand\", \"number_format\": \".3s\", \"linear_color_scheme\": \"fire\", \"limit\": \"0\", \"groupby\": [\"iso\"], \"slice_id\": 15, \"remote_id\": 15, \"datasource_name\": \"spending.Superset Admin-Thailand Government Spending-Untitled Query-BkGuzaUeHX\", \"schema\": \"spending.Superset Admin-Thailand Government Spending-Untitled Query-BkGuzaUeHX\", \"database_name\": \"Thailand Government Spending\"}",
+                            "datasource_name": "spending.Superset Admin-Thailand Government Spending-Untitled Query-BkGuzaUeHX",
+                            "datasource_id": 17,
+                            "id": 15,
+                            "changed_on": {
+                                "__datetime__": "2018-08-02T18:02:38"
+                            },
+                            "changed_by_fk": 1,
+                            "perm": "[Thailand Government Spending].[Superset Admin-Thailand Government Spending-Untitled Query-BkGuzaUeHX](id:17)",
+                            "description": null,
+                            "viz_type": "country_map",
+                            "datasource_type": "table",
+                            "slice_name": "\u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e08\u0e48\u0e32\u0e22\u0e23\u0e32\u0e22\u0e08\u0e31\u0e07\u0e2b\u0e27\u0e31\u0e14 (\u0e25\u0e49\u0e32\u0e19\u0e1a\u0e32\u0e17)",
+                            "created_on": {
+                                "__datetime__": "2018-08-02T17:42:48"
+                            },
+                            "created_by_fk": 1
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"17__table\", \"viz_type\": \"deck_scatter\", \"granularity_sqla\": null, \"time_grain_sqla\": null, \"since\": \"100 years ago\", \"until\": \"now\", \"spatial\": {\"type\": \"latlong\", \"latCol\": \"lat\", \"lonCol\": \"lon\"}, \"row_limit\": 10000, \"adhoc_filters\": null, \"mapbox_style\": \"mapbox://styles/mapbox/streets-v9\", \"viewport\": {\"longitude\": 101, \"latitude\": 13, \"zoom\": 5, \"bearing\": 0, \"pitch\": 40, \"width\": 997, \"height\": 519}, \"autozoom\": true, \"point_radius_fixed\": {\"type\": \"metric\", \"value\": \"sum__price\"}, \"point_unit\": \"square_m\", \"min_radius\": 2, \"max_radius\": 250, \"multiplier\": 500, \"color_picker\": {\"r\": 0, \"g\": 122, \"b\": 135, \"a\": 1}, \"legend_position\": \"tr\", \"dimension\": null, \"color_scheme\": \"bnbColors\", \"js_columns\": [], \"granularity\": null, \"limit\": \"0\", \"groupby\": [\"iso\"], \"slice_id\": 16, \"url_params\": {}, \"remote_id\": 16, \"datasource_name\": \"spending.Superset Admin-Thailand Government Spending-Untitled Query-BkGuzaUeHX\", \"schema\": \"spending.Superset Admin-Thailand Government Spending-Untitled Query-BkGuzaUeHX\", \"database_name\": \"Thailand Government Spending\"}",
+                            "datasource_name": "spending.Superset Admin-Thailand Government Spending-Untitled Query-BkGuzaUeHX",
+                            "datasource_id": 17,
+                            "id": 16,
+                            "changed_on": {
+                                "__datetime__": "2018-08-02T18:02:38"
+                            },
+                            "changed_by_fk": 1,
+                            "perm": "[Thailand Government Spending].[Superset Admin-Thailand Government Spending-Untitled Query-BkGuzaUeHX](id:17)",
+                            "description": "",
+                            "viz_type": "deck_scatter",
+                            "datasource_type": "table",
+                            "slice_name": "\u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e08\u0e48\u0e32\u0e22\u0e23\u0e32\u0e22\u0e08\u0e31\u0e07\u0e2b\u0e27\u0e31\u0e14 (\u0e25\u0e49\u0e32\u0e19\u0e1a\u0e32\u0e17)",
+                            "created_on": {
+                                "__datetime__": "2018-08-02T17:52:04"
+                            },
+                            "created_by_fk": 1
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "table_name": "Superset Admin-Thailand Government Spending-Untitled Query-BkGuzaUeHX",
+                "description": null,
+                "template_params": "{}",
+                "main_dttm_col": null,
+                "default_endpoint": null,
+                "created_by_fk": 1,
+                "database_id": 2,
+                "is_featured": false,
+                "changed_by_fk": 1,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "user_id": null,
+                "offset": 0,
+                "created_on": {
+                    "__datetime__": "2018-08-02T17:30:00"
+                },
+                "schema": "spending",
+                "cache_timeout": null,
+                "changed_on": {
+                    "__datetime__": "2018-08-02T17:40:37"
+                },
+                "sql": "select * from province_price",
+                "params": "{\"remote_id\": 17, \"database_name\": \"Thailand Government Spending\"}",
+                "id": 17,
+                "is_sqllab_view": true,
+                "perm": "[Thailand Government Spending].[Superset Admin-Thailand Government Spending-Untitled Query-BkGuzaUeHX](id:17)",
+                "database": {
+                    "__Database__": {
+                        "changed_on": {
+                            "__datetime__": "2018-08-01T17:02:27"
+                        },
+                        "perm": "[Thailand Government Spending].(id:2)",
+                        "expose_in_sqllab": true,
+                        "id": 2,
+                        "impersonate_user": false,
+                        "allow_run_sync": true,
+                        "verbose_name": null,
+                        "created_by_fk": 1,
+                        "allow_run_async": false,
+                        "database_name": "Thailand Government Spending",
+                        "changed_by_fk": 1,
+                        "allow_ctas": true,
+                        "sqlalchemy_uri": "sparksql://test-superset-0:10000",
+                        "allow_dml": true,
+                        "password": null,
+                        "force_ctas_schema": "",
+                        "cache_timeout": null,
+                        "allow_multi_schema_metadata_fetch": true,
+                        "select_as_create_table_as": false,
+                        "created_on": {
+                            "__datetime__": "2018-08-01T17:02:27"
+                        },
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n"
+                    }
+                },
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "table_id": 17,
+                            "groupby": true,
+                            "created_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "expression": "",
+                            "changed_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "sum": false,
+                            "id": 46,
+                            "python_date_format": null,
+                            "avg": false,
+                            "column_name": "iso",
+                            "database_expression": null,
+                            "max": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "STRING_TYPE",
+                            "description": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "table_id": 17,
+                            "groupby": true,
+                            "created_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "expression": "",
+                            "changed_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "sum": false,
+                            "id": 47,
+                            "python_date_format": null,
+                            "avg": false,
+                            "column_name": "provnc",
+                            "database_expression": null,
+                            "max": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "STRING_TYPE",
+                            "description": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "table_id": 17,
+                            "groupby": false,
+                            "created_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "expression": "",
+                            "changed_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "sum": false,
+                            "id": 48,
+                            "python_date_format": null,
+                            "avg": false,
+                            "column_name": "lat",
+                            "database_expression": null,
+                            "max": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": false,
+                            "type": "DOUBLE_TYPE",
+                            "description": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "table_id": 17,
+                            "groupby": false,
+                            "created_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "expression": "",
+                            "changed_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "sum": false,
+                            "id": 49,
+                            "python_date_format": null,
+                            "avg": false,
+                            "column_name": "lon",
+                            "database_expression": null,
+                            "max": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": false,
+                            "type": "DOUBLE_TYPE",
+                            "description": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "table_id": 17,
+                            "groupby": false,
+                            "created_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "expression": "",
+                            "changed_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "sum": false,
+                            "id": 50,
+                            "python_date_format": null,
+                            "avg": false,
+                            "column_name": "price",
+                            "database_expression": null,
+                            "max": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": false,
+                            "type": "DOUBLE_TYPE",
+                            "description": null
+                        }
+                    }
+                ],
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": null,
+                            "metric_name": "sum__lat",
+                            "changed_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "created_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "created_by_fk": 1,
+                            "table_id": 17,
+                            "d3format": null,
+                            "description": null,
+                            "verbose_name": null,
+                            "id": 31,
+                            "changed_by_fk": 1,
+                            "expression": "sum(lat)"
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": null,
+                            "metric_name": "sum__lon",
+                            "changed_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "created_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "created_by_fk": 1,
+                            "table_id": 17,
+                            "d3format": null,
+                            "description": null,
+                            "verbose_name": null,
+                            "id": 32,
+                            "changed_by_fk": 1,
+                            "expression": "sum(lon)"
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": null,
+                            "metric_name": "sum__price",
+                            "changed_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "created_on": {
+                                "__datetime__": "2018-08-02T17:45:41"
+                            },
+                            "created_by_fk": 1,
+                            "table_id": 17,
+                            "d3format": null,
+                            "description": null,
+                            "verbose_name": null,
+                            "id": 33,
+                            "changed_by_fk": 1,
+                            "expression": "sum(price)"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

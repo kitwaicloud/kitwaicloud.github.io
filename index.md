@@ -23,6 +23,12 @@ This section provides a step-by-step from launching a cluster to training and de
 - [How to Deploy a Spark ML Model](deploy/deploy.md)
 - [Using Zeppelin Notebook for Spark](zeppelin/zeppelin.md)
 
+## SparkSQL
+- [SparkSQL and JDBC Connection](sparksql/sparksql.md)
+
+**Example Usage**
+- [Using Superset to explore and visualize Thailand Government Spending](sparksql/thailand_gov_spending)
+
 ## Storing and Exploring Data with ELK Stack
 Use the ELK (Elasticsearch Logstash and Kibana) stack to store, explore and visualize data.
 1. [Launch an ELK Cluster](elk/launchcluster.md)
@@ -47,7 +53,6 @@ Use the ELK (Elasticsearch Logstash and Kibana) stack to store, explore and visu
 - [Deep Learning with TensorFlow on Spark](tensorflow_on_spark/tensorflow_on_spark.md)
 - [How to Create Node Group Templates and a Cluster Template](create_template/create_template.md)
 - [Using API Libraries to Operate KitWai](apis/apis.md)
-- [SparkSQL and JDBC Connection](sparksql/sparksql.md)
 - [Launch a Flink Cluster](launchflink/launchflink.md)
 
 ## Further Readings

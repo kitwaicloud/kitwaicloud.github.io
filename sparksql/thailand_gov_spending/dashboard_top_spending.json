@@ -1,0 +1,922 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "json_metadata": "{\"filter_immune_slices\": [], \"timed_refresh_immune_slices\": [], \"filter_immune_slice_fields\": {}, \"expanded_slices\": {}, \"default_filters\": \"{}\", \"remote_id\": 6}",
+                "description": null,
+                "dashboard_title": "Top Spending",
+                "changed_on": {
+                    "__datetime__": "2018-07-31T15:05:21"
+                },
+                "changed_by_fk": 1,
+                "slug": null,
+                "css": "",
+                "position_json": "[\n    {\n        \"col\": 1,\n        \"row\": 0,\n        \"size_x\": 16,\n        \"size_y\": 13,\n        \"slice_id\": \"82\"\n    },\n    {\n        \"col\": 17,\n        \"row\": 0,\n        \"size_x\": 16,\n        \"size_y\": 13,\n        \"slice_id\": \"83\"\n    },\n    {\n        \"col\": 33,\n        \"row\": 0,\n        \"size_x\": 14,\n        \"size_y\": 13,\n        \"slice_id\": \"84\"\n    },\n    {\n        \"col\": 23,\n        \"row\": 13,\n        \"size_x\": 26,\n        \"size_y\": 14,\n        \"slice_id\": \"230\"\n    },\n    {\n        \"col\": 1,\n        \"row\": 28,\n        \"size_x\": 22,\n        \"size_y\": 15,\n        \"slice_id\": \"233\"\n    }\n]",
+                "id": 6,
+                "created_on": {
+                    "__datetime__": "2018-07-24T11:13:24"
+                },
+                "created_by_fk": 1,
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "datasource_type": "table",
+                            "slice_name": "10 \u0e08\u0e31\u0e07\u0e2b\u0e27\u0e31\u0e14\u0e17\u0e35\u0e48\u0e21\u0e35\u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e08\u0e48\u0e32\u0e22\u0e2a\u0e39\u0e07\u0e2a\u0e38\u0e14 (\u0e25\u0e49\u0e32\u0e19\u0e1a\u0e32\u0e17)",
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T15:34:00"
+                            },
+                            "changed_by_fk": 1,
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"24__table\", \"viz_type\": \"dist_bar\", \"granularity_sqla\": null, \"time_grain_sqla\": null, \"since\": \"100 years ago\", \"until\": \"now\", \"metrics\": [\"sum__price\"], \"adhoc_filters\": null, \"groupby\": [\"provnc\"], \"columns\": [], \"row_limit\": 10000, \"contribution\": false, \"color_scheme\": \"bnbColors\", \"show_legend\": true, \"show_bar_value\": false, \"bar_stacked\": false, \"order_bars\": false, \"y_axis_format\": \".3s\", \"y_axis_label\": \"\", \"show_controls\": false, \"x_axis_label\": \"\", \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"reduce_x_ticks\": false, \"limit\": \"0\", \"slice_id\": 82, \"remote_id\": 82, \"datasource_name\": \"spending.Superset Admin-Thailand Government Spending-Top Price by Province-SygQeI7VE7\", \"schema\": \"spending.Superset Admin-Thailand Government Spending-Top Price by Province-SygQeI7VE7\", \"database_name\": \"Thailand Government Spending\"}",
+                            "datasource_name": "spending.Superset Admin-Thailand Government Spending-Top Price by Province-SygQeI7VE7",
+                            "datasource_id": 24,
+                            "id": 82,
+                            "created_on": {
+                                "__datetime__": "2018-07-24T11:09:14"
+                            },
+                            "perm": "[None].[Superset Admin-Thailand Government Spending-Top Price by Province-SygQeI7VE7](id:24)",
+                            "description": null,
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "datasource_type": "table",
+                            "slice_name": "10 \u0e2b\u0e19\u0e48\u0e27\u0e22\u0e07\u0e32\u0e19\u0e17\u0e35\u0e48\u0e21\u0e35\u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e08\u0e48\u0e32\u0e22\u0e2a\u0e39\u0e07\u0e2a\u0e38\u0e14 (\u0e25\u0e49\u0e32\u0e19\u0e1a\u0e32\u0e17)",
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T15:34:00"
+                            },
+                            "changed_by_fk": 1,
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"25__table\", \"viz_type\": \"dist_bar\", \"granularity_sqla\": null, \"time_grain_sqla\": null, \"since\": \"100 years ago\", \"until\": \"now\", \"metrics\": [\"sum__price\"], \"adhoc_filters\": null, \"groupby\": [\"dep_name\"], \"columns\": [], \"row_limit\": 10000, \"contribution\": false, \"color_scheme\": \"d3Category10\", \"show_legend\": true, \"show_bar_value\": false, \"bar_stacked\": false, \"order_bars\": false, \"y_axis_format\": \".3s\", \"y_axis_label\": \"\", \"show_controls\": false, \"x_axis_label\": \"\", \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"reduce_x_ticks\": false, \"limit\": \"0\", \"slice_id\": 83, \"remote_id\": 83, \"datasource_name\": \"spending.Superset Admin-Thailand Government Spending-Top Price by Department-HJx5BuXEV7\", \"schema\": \"spending.Superset Admin-Thailand Government Spending-Top Price by Department-HJx5BuXEV7\", \"database_name\": \"Thailand Government Spending\"}",
+                            "datasource_name": "spending.Superset Admin-Thailand Government Spending-Top Price by Department-HJx5BuXEV7",
+                            "datasource_id": 25,
+                            "id": 83,
+                            "created_on": {
+                                "__datetime__": "2018-07-24T11:18:17"
+                            },
+                            "perm": "[None].[Superset Admin-Thailand Government Spending-Top Price by Department-HJx5BuXEV7](id:25)",
+                            "description": null,
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "datasource_type": "table",
+                            "slice_name": "10 \u0e1b\u0e23\u0e30\u0e40\u0e20\u0e17\u0e2b\u0e19\u0e48\u0e27\u0e22\u0e07\u0e32\u0e19\u0e17\u0e35\u0e48\u0e21\u0e35\u0e04\u0e48\u0e32\u0e43\u0e0a\u0e49\u0e08\u0e48\u0e32\u0e22\u0e2a\u0e39\u0e07\u0e2a\u0e38\u0e14 (\u0e25\u0e49\u0e32\u0e19\u0e1a\u0e32\u0e17)",
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T15:34:00"
+                            },
+                            "changed_by_fk": 1,
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"26__table\", \"viz_type\": \"pie\", \"granularity_sqla\": null, \"time_grain_sqla\": null, \"since\": \"100 years ago\", \"until\": \"now\", \"metric\": \"sum__price\", \"adhoc_filters\": null, \"groupby\": [\"org_name\"], \"limit\": \"0\", \"pie_label_type\": \"key\", \"donut\": true, \"show_legend\": true, \"labels_outside\": true, \"color_scheme\": \"bnbColors\", \"slice_id\": 84, \"url_params\": {}, \"filters\": [], \"remote_id\": 84, \"datasource_name\": \"spending.Superset Admin-Thailand Government Spending-Top Price by Department Type-B1-9En7V47\", \"schema\": \"spending.Superset Admin-Thailand Government Spending-Top Price by Department Type-B1-9En7V47\", \"database_name\": \"Thailand Government Spending\"}",
+                            "datasource_name": "spending.Superset Admin-Thailand Government Spending-Top Price by Department Type-B1-9En7V47",
+                            "datasource_id": 26,
+                            "id": 84,
+                            "created_on": {
+                                "__datetime__": "2018-07-24T11:34:51"
+                            },
+                            "perm": "[None].[Superset Admin-Thailand Government Spending-Top Price by Department Type-B1-9En7V47](id:26)",
+                            "description": "",
+                            "viz_type": "pie"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "datasource_type": "table",
+                            "slice_name": "Top Method by Top Department ",
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T15:34:00"
+                            },
+                            "changed_by_fk": 1,
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"37__table\", \"viz_type\": \"heatmap\", \"granularity_sqla\": null, \"time_grain_sqla\": null, \"since\": \"100 years ago\", \"until\": \"now\", \"all_columns_x\": \"dep_name\", \"all_columns_y\": \"mthd_name\", \"metric\": \"sum__price\", \"adhoc_filters\": null, \"row_limit\": 10000, \"linear_color_scheme\": \"oranges\", \"xscale_interval\": \"1\", \"yscale_interval\": \"1\", \"canvas_image_rendering\": \"pixelated\", \"normalize_across\": \"heatmap\", \"left_margin\": \"auto\", \"bottom_margin\": \"auto\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \".3s\", \"show_legend\": false, \"show_perc\": true, \"show_values\": true, \"normalized\": false, \"sort_x_axis\": \"alpha_asc\", \"sort_y_axis\": \"alpha_asc\", \"limit\": \"0\", \"groupby\": [\"dep_name\"], \"slice_id\": 230, \"remote_id\": 230, \"datasource_name\": \"spending.Superset Admin-Thailand Government Spending-Untitled Query 2-BJeEgAB6VQ\", \"schema\": \"spending.Superset Admin-Thailand Government Spending-Untitled Query 2-BJeEgAB6VQ\", \"database_name\": \"Thailand Government Spending\"}",
+                            "datasource_name": "spending.Superset Admin-Thailand Government Spending-Untitled Query 2-BJeEgAB6VQ",
+                            "datasource_id": 37,
+                            "id": 230,
+                            "created_on": {
+                                "__datetime__": "2018-07-31T09:55:04"
+                            },
+                            "perm": "[None].[Superset Admin-Thailand Government Spending-Untitled Query 2-BJeEgAB6VQ](id:37)",
+                            "description": null,
+                            "viz_type": "heatmap"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "datasource_type": "table",
+                            "slice_name": "Top Type by Top Department (MB)",
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T15:34:00"
+                            },
+                            "changed_by_fk": 1,
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"45__table\", \"viz_type\": \"dist_bar\", \"granularity_sqla\": null, \"time_grain_sqla\": null, \"since\": \"100 years ago\", \"until\": \"now\", \"metrics\": [\"sum__price\"], \"adhoc_filters\": null, \"groupby\": [\"dep_name\"], \"columns\": [\"typ_name\"], \"row_limit\": 10000, \"contribution\": false, \"color_scheme\": \"bnbColors\", \"show_legend\": true, \"show_bar_value\": true, \"bar_stacked\": true, \"order_bars\": false, \"y_axis_format\": \".3s\", \"y_axis_label\": \"\", \"show_controls\": true, \"x_axis_label\": \"\", \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"reduce_x_ticks\": false, \"limit\": \"0\", \"slice_id\": 233, \"remote_id\": 233, \"datasource_name\": \"spending.Superset Admin-Thailand Government Spending-Top Type by Top Department-rke2RrY64Q\", \"schema\": \"spending.Superset Admin-Thailand Government Spending-Top Type by Top Department-rke2RrY64Q\", \"database_name\": \"Thailand Government Spending\"}",
+                            "datasource_name": "spending.Superset Admin-Thailand Government Spending-Top Type by Top Department-rke2RrY64Q",
+                            "datasource_id": 45,
+                            "id": 233,
+                            "created_on": {
+                                "__datetime__": "2018-07-31T13:47:45"
+                            },
+                            "perm": "[None].[Superset Admin-Thailand Government Spending-Top Type by Top Department-rke2RrY64Q](id:45)",
+                            "description": null,
+                            "viz_type": "dist_bar"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "filter_select_enabled": false,
+                "fetch_values_predicate": null,
+                "offset": 0,
+                "user_id": null,
+                "cache_timeout": null,
+                "created_on": {
+                    "__datetime__": "2018-07-31T13:46:48"
+                },
+                "schema": "spending",
+                "params": "{\"remote_id\": 45, \"database_name\": \"Thailand Government Spending\"}",
+                "changed_on": {
+                    "__datetime__": "2018-07-31T13:46:48"
+                },
+                "sql": "select dep_name, typ_name, sum(contrct_price)/1E6 as price\nfrom contract, department \nwhere contract.subdep_name = department.subdep_name\nand department.dep_name in (\n   select dep_name \n   from contract, department \n   where contract.subdep_name = department.subdep_name \n   group by dep_name \n   order by sum(contrct_price) desc \n   limit 10\n)\ngroup by dep_name, typ_name",
+                "perm": "[None].[Superset Admin-Thailand Government Spending-Top Type by Top Department-rke2RrY64Q](id:45)",
+                "id": 45,
+                "is_sqllab_view": true,
+                "table_name": "Superset Admin-Thailand Government Spending-Top Type by Top Department-rke2RrY64Q",
+                "description": null,
+                "template_params": "{}",
+                "main_dttm_col": null,
+                "default_endpoint": null,
+                "created_by_fk": 1,
+                "database_id": 2,
+                "is_featured": false,
+                "changed_by_fk": 1,
+                "database": {
+                    "__Database__": {
+                        "allow_ctas": false,
+                        "database_name": "Thailand Government Spending",
+                        "changed_by_fk": 1,
+                        "allow_dml": true,
+                        "sqlalchemy_uri": "sparksql://superset-superset-0:10000/",
+                        "force_ctas_schema": "",
+                        "password": null,
+                        "allow_multi_schema_metadata_fetch": true,
+                        "cache_timeout": null,
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n",
+                        "created_on": {
+                            "__datetime__": "2018-07-23T14:56:19"
+                        },
+                        "select_as_create_table_as": false,
+                        "changed_on": {
+                            "__datetime__": "2018-07-26T14:47:47"
+                        },
+                        "perm": "[Thailand Government Spending].(id:2)",
+                        "expose_in_sqllab": true,
+                        "impersonate_user": false,
+                        "id": 2,
+                        "allow_run_sync": true,
+                        "verbose_name": null,
+                        "created_by_fk": 1,
+                        "allow_run_async": false
+                    }
+                },
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 553,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "dep_name",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "type": "STRING_TYPE",
+                            "table_id": 45,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-31T13:46:48"
+                            },
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T13:46:48"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 554,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "typ_name",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "type": "STRING_TYPE",
+                            "table_id": 45,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-31T13:46:48"
+                            },
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T13:46:48"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 555,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "price",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "type": "DOUBLE_TYPE",
+                            "table_id": 45,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-31T13:46:48"
+                            },
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T13:46:48"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    }
+                ],
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 856,
+                            "created_on": {
+                                "__datetime__": "2018-07-31T13:46:48"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "sum(price)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": null,
+                            "metric_name": "sum__price",
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T13:46:48"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 45,
+                            "d3format": null,
+                            "description": null
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "filter_select_enabled": false,
+                "fetch_values_predicate": null,
+                "offset": 0,
+                "user_id": null,
+                "cache_timeout": null,
+                "created_on": {
+                    "__datetime__": "2018-07-24T11:34:15"
+                },
+                "schema": "spending",
+                "params": "{\"remote_id\": 26, \"database_name\": \"Thailand Government Spending\"}",
+                "changed_on": {
+                    "__datetime__": "2018-07-24T11:34:15"
+                },
+                "sql": "select org_name, sum(contrct_price)/1E6 as price \nfrom contract, department \nwhere contract.subdep_name = department.subdep_name \ngroup by org_name \norder by price desc\nlimit 10",
+                "perm": "[None].[Superset Admin-Thailand Government Spending-Top Price by Department Type-B1-9En7V47](id:26)",
+                "id": 26,
+                "is_sqllab_view": true,
+                "table_name": "Superset Admin-Thailand Government Spending-Top Price by Department Type-B1-9En7V47",
+                "description": null,
+                "template_params": "{}",
+                "main_dttm_col": null,
+                "default_endpoint": null,
+                "created_by_fk": 1,
+                "database_id": 2,
+                "is_featured": false,
+                "changed_by_fk": 1,
+                "database": {
+                    "__Database__": {
+                        "allow_ctas": false,
+                        "database_name": "Thailand Government Spending",
+                        "changed_by_fk": 1,
+                        "allow_dml": true,
+                        "sqlalchemy_uri": "sparksql://superset-superset-0:10000/",
+                        "force_ctas_schema": "",
+                        "password": null,
+                        "allow_multi_schema_metadata_fetch": true,
+                        "cache_timeout": null,
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n",
+                        "created_on": {
+                            "__datetime__": "2018-07-23T14:56:19"
+                        },
+                        "select_as_create_table_as": false,
+                        "changed_on": {
+                            "__datetime__": "2018-07-26T14:47:47"
+                        },
+                        "perm": "[Thailand Government Spending].(id:2)",
+                        "expose_in_sqllab": true,
+                        "impersonate_user": false,
+                        "id": 2,
+                        "allow_run_sync": true,
+                        "verbose_name": null,
+                        "created_by_fk": 1,
+                        "allow_run_async": false
+                    }
+                },
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 481,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "org_name",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "type": "STRING_TYPE",
+                            "table_id": 26,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-24T11:34:15"
+                            },
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-24T11:34:15"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 482,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "price",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "type": "DOUBLE_TYPE",
+                            "table_id": 26,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-24T11:34:15"
+                            },
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-24T11:34:15"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    }
+                ],
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 807,
+                            "created_on": {
+                                "__datetime__": "2018-07-24T11:34:15"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "sum(price)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": null,
+                            "metric_name": "sum__price",
+                            "changed_on": {
+                                "__datetime__": "2018-07-24T11:34:15"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 26,
+                            "d3format": null,
+                            "description": null
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "filter_select_enabled": false,
+                "fetch_values_predicate": null,
+                "offset": 0,
+                "user_id": null,
+                "cache_timeout": null,
+                "created_on": {
+                    "__datetime__": "2018-07-24T11:07:39"
+                },
+                "schema": "spending",
+                "params": "{\"remote_id\": 24, \"database_name\": \"Thailand Government Spending\"}",
+                "changed_on": {
+                    "__datetime__": "2018-07-24T11:07:39"
+                },
+                "sql": "select provnc, sum(contrct_price)/1E6 as price \nfrom contract, department \nwhere contract.subdep_name = department.subdep_name \ngroup by provnc \norder by price desc \nlimit 10",
+                "perm": "[None].[Superset Admin-Thailand Government Spending-Top Price by Province-SygQeI7VE7](id:24)",
+                "id": 24,
+                "is_sqllab_view": true,
+                "table_name": "Superset Admin-Thailand Government Spending-Top Price by Province-SygQeI7VE7",
+                "description": null,
+                "template_params": "{}",
+                "main_dttm_col": null,
+                "default_endpoint": null,
+                "created_by_fk": 1,
+                "database_id": 2,
+                "is_featured": false,
+                "changed_by_fk": 1,
+                "database": {
+                    "__Database__": {
+                        "allow_ctas": false,
+                        "database_name": "Thailand Government Spending",
+                        "changed_by_fk": 1,
+                        "allow_dml": true,
+                        "sqlalchemy_uri": "sparksql://superset-superset-0:10000/",
+                        "force_ctas_schema": "",
+                        "password": null,
+                        "allow_multi_schema_metadata_fetch": true,
+                        "cache_timeout": null,
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n",
+                        "created_on": {
+                            "__datetime__": "2018-07-23T14:56:19"
+                        },
+                        "select_as_create_table_as": false,
+                        "changed_on": {
+                            "__datetime__": "2018-07-26T14:47:47"
+                        },
+                        "perm": "[Thailand Government Spending].(id:2)",
+                        "expose_in_sqllab": true,
+                        "impersonate_user": false,
+                        "id": 2,
+                        "allow_run_sync": true,
+                        "verbose_name": null,
+                        "created_by_fk": 1,
+                        "allow_run_async": false
+                    }
+                },
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 477,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "provnc",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "type": "STRING_TYPE",
+                            "table_id": 24,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-24T11:07:39"
+                            },
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-24T11:07:39"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 478,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "price",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "type": "DOUBLE_TYPE",
+                            "table_id": 24,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-24T11:07:39"
+                            },
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-24T11:07:39"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    }
+                ],
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 805,
+                            "created_on": {
+                                "__datetime__": "2018-07-24T11:07:39"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "sum(price)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": null,
+                            "metric_name": "sum__price",
+                            "changed_on": {
+                                "__datetime__": "2018-07-24T11:07:39"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 24,
+                            "d3format": null,
+                            "description": null
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "filter_select_enabled": false,
+                "fetch_values_predicate": null,
+                "offset": 0,
+                "user_id": null,
+                "cache_timeout": null,
+                "created_on": {
+                    "__datetime__": "2018-07-24T11:17:56"
+                },
+                "schema": "spending",
+                "params": "{\"remote_id\": 25, \"database_name\": \"Thailand Government Spending\"}",
+                "changed_on": {
+                    "__datetime__": "2018-07-24T11:17:56"
+                },
+                "sql": "select dep_name, sum(contrct_price)/1E6 as price \nfrom contract, department \nwhere contract.subdep_name = department.subdep_name \ngroup by dep_name \norder by price desc \nlimit 10",
+                "perm": "[None].[Superset Admin-Thailand Government Spending-Top Price by Department-HJx5BuXEV7](id:25)",
+                "id": 25,
+                "is_sqllab_view": true,
+                "table_name": "Superset Admin-Thailand Government Spending-Top Price by Department-HJx5BuXEV7",
+                "description": null,
+                "template_params": "{}",
+                "main_dttm_col": null,
+                "default_endpoint": null,
+                "created_by_fk": 1,
+                "database_id": 2,
+                "is_featured": false,
+                "changed_by_fk": 1,
+                "database": {
+                    "__Database__": {
+                        "allow_ctas": false,
+                        "database_name": "Thailand Government Spending",
+                        "changed_by_fk": 1,
+                        "allow_dml": true,
+                        "sqlalchemy_uri": "sparksql://superset-superset-0:10000/",
+                        "force_ctas_schema": "",
+                        "password": null,
+                        "allow_multi_schema_metadata_fetch": true,
+                        "cache_timeout": null,
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n",
+                        "created_on": {
+                            "__datetime__": "2018-07-23T14:56:19"
+                        },
+                        "select_as_create_table_as": false,
+                        "changed_on": {
+                            "__datetime__": "2018-07-26T14:47:47"
+                        },
+                        "perm": "[Thailand Government Spending].(id:2)",
+                        "expose_in_sqllab": true,
+                        "impersonate_user": false,
+                        "id": 2,
+                        "allow_run_sync": true,
+                        "verbose_name": null,
+                        "created_by_fk": 1,
+                        "allow_run_async": false
+                    }
+                },
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 479,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "dep_name",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "type": "STRING_TYPE",
+                            "table_id": 25,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-24T11:17:56"
+                            },
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-24T11:17:56"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 480,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "price",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "type": "DOUBLE_TYPE",
+                            "table_id": 25,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-24T11:17:56"
+                            },
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-24T11:17:56"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    }
+                ],
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 806,
+                            "created_on": {
+                                "__datetime__": "2018-07-24T11:17:56"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "sum(price)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": null,
+                            "metric_name": "sum__price",
+                            "changed_on": {
+                                "__datetime__": "2018-07-24T11:17:56"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 25,
+                            "d3format": null,
+                            "description": null
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "filter_select_enabled": false,
+                "fetch_values_predicate": null,
+                "offset": 0,
+                "user_id": null,
+                "cache_timeout": null,
+                "created_on": {
+                    "__datetime__": "2018-07-31T09:49:38"
+                },
+                "schema": "spending",
+                "params": "{\"remote_id\": 37, \"database_name\": \"Thailand Government Spending\"}",
+                "changed_on": {
+                    "__datetime__": "2018-07-31T09:49:38"
+                },
+                "sql": "select dep_name, mthd_name, sum(contrct_price)/1E6 as price\nfrom contract, department \nwhere contract.subdep_name = department.subdep_name\nand department.dep_name in (\n   select dep_name \n   from contract, department \n   where contract.subdep_name = department.subdep_name \n   group by dep_name \n   order by sum(contrct_price) desc \n   limit 10\n)\ngroup by dep_name, mthd_name",
+                "perm": "[None].[Superset Admin-Thailand Government Spending-Untitled Query 2-BJeEgAB6VQ](id:37)",
+                "id": 37,
+                "is_sqllab_view": true,
+                "table_name": "Superset Admin-Thailand Government Spending-Untitled Query 2-BJeEgAB6VQ",
+                "description": null,
+                "template_params": "{}",
+                "main_dttm_col": null,
+                "default_endpoint": null,
+                "created_by_fk": 1,
+                "database_id": 2,
+                "is_featured": false,
+                "changed_by_fk": 1,
+                "database": {
+                    "__Database__": {
+                        "allow_ctas": false,
+                        "database_name": "Thailand Government Spending",
+                        "changed_by_fk": 1,
+                        "allow_dml": true,
+                        "sqlalchemy_uri": "sparksql://superset-superset-0:10000/",
+                        "force_ctas_schema": "",
+                        "password": null,
+                        "allow_multi_schema_metadata_fetch": true,
+                        "cache_timeout": null,
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n",
+                        "created_on": {
+                            "__datetime__": "2018-07-23T14:56:19"
+                        },
+                        "select_as_create_table_as": false,
+                        "changed_on": {
+                            "__datetime__": "2018-07-26T14:47:47"
+                        },
+                        "perm": "[Thailand Government Spending].(id:2)",
+                        "expose_in_sqllab": true,
+                        "impersonate_user": false,
+                        "id": 2,
+                        "allow_run_sync": true,
+                        "verbose_name": null,
+                        "created_by_fk": 1,
+                        "allow_run_async": false
+                    }
+                },
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 518,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "dep_name",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "type": "STRING_TYPE",
+                            "table_id": 37,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-31T09:49:38"
+                            },
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T09:49:38"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 519,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "mthd_name",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "type": "STRING_TYPE",
+                            "table_id": 37,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-31T09:49:38"
+                            },
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T09:49:38"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 520,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "price",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "type": "DOUBLE_TYPE",
+                            "table_id": 37,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-31T09:49:38"
+                            },
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T09:49:38"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    }
+                ],
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 831,
+                            "created_on": {
+                                "__datetime__": "2018-07-31T09:49:38"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "sum(price)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": null,
+                            "metric_name": "sum__price",
+                            "changed_on": {
+                                "__datetime__": "2018-07-31T09:49:38"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 37,
+                            "d3format": null,
+                            "description": null
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
