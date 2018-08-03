@@ -1,7 +1,7 @@
 # Thailand Government Spending
 In this example, we show steps how to query and visualize Thailand government spending dataset using SparkSQL and Superset.
 
-*It should be noted that this example is for demonstration only since we didn't do data cleansing. For more accurate and complete information check the official [web site](https://govspending.data.go.th/)*
+*It should be noted that this example is for demonstration only since we didn't do data cleansing. For more accurate and complete information check the official [web site](https://govspending.data.go.th/).*
 
 ## Download sample database
 The dataset can be downloaded from [Open Government Data](https://data.go.th/Default.aspx). The dataset is semimonthly published Comptroller General's Department in CSV format. Users can download the CSV files by using web browser. The dataset is divided into many files, each of which has the following structure.
@@ -41,7 +41,7 @@ Follow this [guide](../../launchcluster.md) to launch a Spark cluster.
 
 Then, click on Scale to add a superset node.
 
-<img src="add_supetset.png">
+<img src="add_superset.png">
 
 Note the IP of the superset node which we will use it to login.
 
@@ -312,7 +312,7 @@ Now, the dashboard looks like.
 <img src="overall_spending.png" width="400">
 
 
-For convenience, the complete dashboard can be imported from file. See [How to import a dashboard](##-how-to-import-a-dashboard)
+For convenience, the complete dashboard can be imported from file. See [How to import a dashboard](#how-to-import-a-dashboard)
 
 Next, we create another dashboard, called Top Spending, consisting of 5 charts as follows.
 
@@ -441,8 +441,8 @@ The Spending Map dashboard is shown below.
 Users may optionally import the previous dashboards into Superset if the database name is matching, i.e. Thailand Government Spending.
 
 Download the dashboards.
-[Spending Overall](dashboard_overall_spending.json)
-[Top Spending](dashboard_top_spending.json)
-[Spending Map](dashboard_spending_map.json)
+- [Spending Overall](dashboard_overall_spending.json)
+- [Top Spending](dashboard_top_spending.json)
+- [Spending Map](dashboard_spending_map.json)
 
 Click on Import dashboards under Manage menu and select the downloaded file.

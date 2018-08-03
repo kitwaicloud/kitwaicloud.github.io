@@ -27,7 +27,7 @@ This section provides a step-by-step from launching a cluster to training and de
 - [SparkSQL and JDBC Connection](sparksql/sparksql.md)
 
 **Example Usage**
-- [Using Superset to explore and visualize Thailand Government Spending](sparksql/thailand_gov_spending)
+- [Using Superset to explore and visualize Thailand Government Spending](sparksql/thailand_gov_spending/spending.md)
 
 ## Storing and Exploring Data with ELK Stack
 Use the ELK (Elasticsearch Logstash and Kibana) stack to store, explore and visualize data.
