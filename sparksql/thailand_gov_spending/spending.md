@@ -1,5 +1,5 @@
 # Thailand Government Spending
-In this example, we show steps how to query and visualize Thailand government spending dataset using SparkSQL and Superset.
+In this example, we show steps how to query and visualize Thailand government spending dataset using SparkSQL and Superset (experimental version).
 
 *It should be noted that this example is for demonstration only since we didn't do data cleansing. For more accurate and complete information check the official [web site](https://govspending.data.go.th/).*
 
@@ -32,7 +32,7 @@ From observation, many long ID fields such as contract.win_tin, corporate.merchn
 
 In contract.csv, proj_mny and cost_build are the budget and appraisal cost of the project, respectively. The link to department is done by subdep_name which is not exactly right since subdep_name is not unique ID. The format of contrct_date in some records are in dd/MM/YYYY; while others in YYYY-MM-dd. Moreover, there can be multiple (sub) contracts for each project NO. The summation of contrct_price of all sub contracts should be equal to the project price. However, we found that some users input the whole contract price together with all its sub-contract prices in separated records so the summation of contrct_price will be doubled such as in proj_no 58035126663. We also found records having duplicated contrct_num although they are in different proj_no.
 
-For department.csv. the same department records can appear in several files of months/years and they are involved in different projects in different time.
+For department.csv. the same department records can appear in several files of months/years as they are involved in different projects in different time.
 Similarly, corporate records appear several times as well.
 Records in budget_id are always duplicated according to the number of sub-contracts of a project.  
 
@@ -43,7 +43,7 @@ Then, click on Scale to add a superset node.
 
 <img src="add_superset.png">
 
-Note the IP of the superset node which we will use it to login.
+Note the IP of the superset node from the Cluster info page. We will use it to login.
 
 <img src="cluster_info.png">
 
@@ -384,7 +384,7 @@ The Top Spending dashboard is shown below.
 
 
 ## Working with maps
-We need to create an additional table and a view. The thailand_province provides the lat/long of all provinces in Thailand as well as the province code in ISO 3166-2. We'll directly load it from Swift storage.
+We need to create an additional table and a view. The thailand_province provides the lat/long of all provinces in Thailand as well as the province code in ISO 3166-2. We'll directly load it from Swift storage.  See this [section](../../swift/swift.md) for more information on how to work with Swift.
 
 We create a view province_price for using with maps to avoid the data type problems in the current version of Superset.
 

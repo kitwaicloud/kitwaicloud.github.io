@@ -24,7 +24,7 @@ Enter the note name, e.g. Bank and click Create.
 
 
 ## Load sample data
-In the first paragraph, copy and paste the following line. Click on the play button and wait until the paragraph has finished executing. This paragraph executes commands in Bash shell (as denoted by %sh interpreter in the first line)
+In the first paragraph, copy and paste the following line. Click on the play button and wait until the paragraph has finished executing. This paragraph executes commands in Bash shell (as denoted by %sh interpreter in the first line).
 
 ```shell
 %sh
@@ -40,6 +40,8 @@ The sample data looks like:
 58;"management";"married";"tertiary";"no";2143;"yes";"no";"unknown";5;"may";261;1;-1;0;"unknown";"no"
 44;"technician";"single";"secondary";"no";29;"yes";"no";"unknown";5;"may";151;1;-1;0;"unknown";"no"
 ```
+
+This sample data is from [UCI bank dataset](https://archive.ics.uci.edu/ml/datasets/bank+marketing).
 
 ## Read data and create a table in SparkSQL
 In the next paragraph, remove the %sh from the first line. The default interpreter is scala Spark. Copy the following code block and play. The program will read the CSV file and create a "bank" table. It may take seconds to finish due to the overhead of creating a new Spark context. This example is adapted from [Zeppelin Tutorial](https://zeppelin.apache.org/docs/0.8.0/quickstart/tutorial.html).
