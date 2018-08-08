@@ -387,7 +387,7 @@ The Top Spending dashboard is shown below.
 
 
 ## Working with maps
-We need to create an additional table and a view. The thailand_province provides the lat/long of all provinces in Thailand as well as the province code in ISO 3166-2. We'll directly load it from Swift storage.  See this [section](../../swift/swift.md) for more information on how to work with Swift.
+We need to create an additional table and a view. The thailand_province provides the lat/long of all provinces in Thailand as well as the province code in ISO 3166-2. We'll directly load it from Swift storage.  See this [section](../../swift/swift.md) for more information on how to work with Swift. Optionally, click [thailand_province.csv](thailand_province.csv) to download and put it into HDFS as previously described.
 
 We create a view province_price for using with maps to avoid the data type problems in the current version of Superset.
 
