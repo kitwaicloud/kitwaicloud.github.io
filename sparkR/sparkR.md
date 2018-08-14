@@ -13,14 +13,14 @@ Add a rstudio node group and click Scale.
 
 After the cluster has finished scaling, click on the RStudio URL to bring up the RStudio Web UI.
 
-<img src="add_rstudio_node_group.png">
+<img src="rstudio_url.png">
 
 ## Sign in and change the default password
 Sign in with the default username and password as centos to enter the RStudio IDE.
 
 <img src="sign_in.png" width="200">
 
-<img src="rstudio_ide.png" width="400">
+<img src="rstudio_ide.png" width="600">
 
 After logged in, change the password by clicking on Tools menu and select Shell.
 
