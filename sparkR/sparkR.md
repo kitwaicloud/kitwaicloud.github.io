@@ -18,6 +18,8 @@ After the cluster has finished scaling, click on the RStudio URL to bring up the
 ## Sign in and change the default password
 Sign in with the default username and password as centos to enter the RStudio IDE.
 
+<img src="sign_in.png" width="200">
+
 <img src="rstudio_ide.png" width="400">
 
 After logged in, change the password by clicking on Tools menu and select Shell.
@@ -107,7 +109,7 @@ only showing top 20 rows
 
 ```
 
-Currently, SparkR is not the mainstream development of Spark APIs compared to Scala and Python. For other operations of SparkR, please see the [official documentation](https://spark.apache.org/docs/latest/sparkr.html).
+Currently, SparkR is not the mainstream development of Spark APIs compared to Scala, Java and Python. For other operations of SparkR, please see the [official documentation](https://spark.apache.org/docs/latest/sparkr.html).
 
 ## Install additional R libraries
 For operations that require additional R packages to process DataFrame on Spark worker nodes, the packages must exist on all worker nodes. So, users are required to manually install the additional packages by the standard installation procedure of R packages on each node.  
