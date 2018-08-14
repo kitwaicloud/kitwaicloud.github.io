@@ -22,6 +22,7 @@ This section provides a step-by-step from launching a cluster to training and de
 **Other Tasks**
 - [How to Deploy a Spark ML Model](deploy/deploy.md)
 - [Using Zeppelin Notebook for Spark](zeppelin/zeppelin.md)
+- [Using RStudio Server with SparkR](sparkR/sparkR.md)
 
 ## SparkSQL
 - [SparkSQL and JDBC Connection](sparksql/sparksql.md)

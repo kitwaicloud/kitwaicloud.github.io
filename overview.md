@@ -1,6 +1,6 @@
 # Overview
 
-This instruction manual provides a guideline how to perform tasks on KitWai platform ranging from starting, using and terminating a Spark cluster. Although we use python and Jupyter notebook as the main tools to give illustrative examples, other tools and programming language can still be used if needed.
+This instruction manual provides a guideline how to perform tasks on KitWai platform ranging from starting Spark or Elasticsearch clusters, using the cluster to process and visualize data, to terminating clusters. Although we mainly use python and Jupyter notebook as the tools to give illustrative examples, other tools and programming language can still be used if needed.
 
 KitWai consists of the following components.
 
