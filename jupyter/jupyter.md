@@ -66,7 +66,7 @@ warnings.filterwarnings('ignore')
 
 %matplotlib inline
 import pandas as pd
-pd.options.display.mpl_style = 'default'
+#pd.options.display.mpl_style = 'default'    # mpl_style is deprecated
 ```
 
 Load train dataset from HDFS and explore data. The dataset has the following fields. The Churn field is what we wants to predict.
