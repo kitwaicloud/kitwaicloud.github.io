@@ -1,4 +1,4 @@
-# Using Logstash to Ingest DataFrame
+# Using Logstash to Ingest Data
 Logstash configuration consists of three sections: input, filter, and output, which define how data are received, transformed, and sent. Each section can be configured with a lot of available plugins.
 
 ## Receive HTTP input and send to Elasticsearch
