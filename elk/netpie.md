@@ -192,4 +192,12 @@ The output of logstash looks like below. Each json object has only one field of 
        "@version" => "1",
      "@timestamp" => 2018-08-22T08:29:17.265Z
 }
+{
+    "Moisture" => 80.5,
+    "description" => "",
+         "doc_id" => "sensor1_1534926557265",
+         "feedid" => "sensor1",
+       "@version" => "1",
+     "@timestamp" => 2018-08-22T08:29:17.265Z
+}
 ```
