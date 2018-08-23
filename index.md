@@ -43,6 +43,7 @@ Use the ELK (Elasticsearch Logstash and Kibana) stack to store, explore and visu
 **Example Usage**
 - [Load and Explore Weather Data with ELK Cluster](elk/weather.md)
 - [Work with Historical and Real-Time Air Quality Data from OpenAQ](elk/openaq.md)
+- [Connect to NETPIE IoT Cloud Platform](elk/netpie.md)
 
 ## Specific Tasks
 - [Running Integrated Meta-omic Pipeline (IMP) for Bioinformatic Analysis](imp/imp.md)

@@ -38,7 +38,27 @@ output {
 }
 ```
 
-The sensor index should have the following mappings.
+To send data, we can use curl command as shown below.
+
+```shell
+curl -u user:password http://logstash_ip -d 'abc,1.0,2.0,3.0'
+```
+
+The output looks like:
+```javascript
+{
+     "@timestamp" => 2018-07-10T05:46:50.662Z,
+        "message" => "abc,1.0,2.0,3.0",
+    "Temperature" => 1.0,
+       "Moisture" => 2.0,
+          "Light" => 3.0,
+             "ID" => "abc",
+       "@version" => "1"
+}
+```
+
+
+The schema of the sensor index is automatically determined and should be similar to the following mappings. However, the manually-defined schema is highly recommended, if possible.
 
 ```json
 {
@@ -65,24 +85,6 @@ The sensor index should have the following mappings.
 }
 ```
 
-To send data, we can use curl command as shown below.
-
-```shell
-curl -u user:password http://logstash_ip -d 'abc,1.0,2.0,3.0'
-```
-
-The output looks like:
-```javascript
-{
-     "@timestamp" => 2018-07-10T05:46:50.662Z,
-        "message" => "abc,1.0,2.0,3.0",
-    "Temperature" => 1.0,
-       "Moisture" => 2.0,
-          "Light" => 3.0,
-             "ID" => "abc",
-       "@version" => "1"
-}
-```
 
 ## Receive HTTP URL and send to Elasticsearch
 In the following configuration, data are sent in HTTP url, e.g. http://localhost/abc?data=1.0,2.0,3.0. We use grok plugin for pattern matching.
