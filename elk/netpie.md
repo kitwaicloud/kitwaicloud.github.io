@@ -114,7 +114,7 @@ The output of logstash looks like:
 ```
 
 ## Query data from NETPIE feed API
-We show how to use logstash to continuously query data from feed API. The logstash configuration is shown below. The input http_poller plugin repeatedly queries the feed API at every midnight UTC. For each  json response object, the filter unfolds the arrays and nested fields into multiple flat json objects. The document ID and @timestamp fields are created from data. Unnecessary files are removed.
+We show how to use logstash to continuously query data from feed API. The logstash configuration is shown below. The input http_poller plugin repeatedly queries the feed API at every midnight UTC. For each  json response object, the filter unfolds the arrays and nested fields into multiple flat json objects. The document ID and @timestamp fields are created from data. The document ID is the concatenation of feedid and timestamp. Unnecessary fields are removed.
 
 ```shell
 input {
