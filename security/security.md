@@ -37,12 +37,12 @@ $ hdfs dfs -mkdir /user/centos/secure
 $ hdfs crypto -createZone -keyName mykey -path /user/centos/secure
 Added encryption zone /user/centos/secure
 ```
-5. Check list of the encryption zone that is created in the previous step.
+5. Check list of the encryption zone that is created in the previous step. The output have to show encryption zone directory and encrytion key name.
 ```shell
 $ hdfs dfs -listZones
 /user/centos/secure  mykey
 ```
-6. Put a test file into the encryption zone directory. This example, we use "/etc/hosts" file as a test file.
+6. Put a test file into the encryption zone directory. This example, we use "/etc/hosts" file as the test file.
 ```shell
 $ hdfs dfs -put /etc/hosts /user/centos/secure
 ```
