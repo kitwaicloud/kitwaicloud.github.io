@@ -45,3 +45,6 @@ $ hdfs dfs -listZones
 ```shell
 $ hdfs dfs -put /etc/hosts /user/centos/secure
 ```
+
+### Data in transit
+Secure connections are established for the following  inter-cloud communication which include ssh and backend services proxied through nginx such as Spark web UI, Jupyter notebook. Currently, we do not encrypt data for intra-cloud traffic.
