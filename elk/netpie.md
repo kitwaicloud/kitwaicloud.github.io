@@ -64,7 +64,7 @@ For other required parameters of MQTT plugin, we will create a new microgear "th
 pip install microgear
 ```
 
-Next, create a new microgear "thing" by running the following python program. Replace the APPID, APPKEY and APPSECRET obtained from your NETPIE account. Note that if there exists a  microgear-APPKEY.cache file in the current directory, the program will just use the data from the existing microgear thing. Use the output of the program for MQTT plugin paramters.
+Next, create a new microgear "thing" by running the following python program. Replace the APPID, APPKEY and APPSECRET obtained from your NETPIE account. Note that if there exists a  microgear-APPKEY.cache file in the current directory, the program will just use the data from the existing microgear thing. Use the output of the program for MQTT plugin parameters.
 
 ```python
 import microgear.client as mc
