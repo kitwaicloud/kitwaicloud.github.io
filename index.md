@@ -30,6 +30,9 @@ This section provides a step-by-step from launching a cluster to training and de
 **Example Usage**
 - [Using Superset to explore and visualize Thailand Government Spending](sparksql/thailand_gov_spending/spending.md) with [Benchmark](sparksql/thailand_gov_spending/benchmark.md)
 
+## Spark Streaming
+- [Connect Spark Streaming to NETPIE IoT Cloud Platform](spark_streaming/netpie.md)
+
 ## Storing and Exploring Data with ELK Stack
 Use the ELK (Elasticsearch Logstash and Kibana) stack to store, explore and visualize data.
 1. [Launch an ELK Cluster](elk/launchcluster.md)
