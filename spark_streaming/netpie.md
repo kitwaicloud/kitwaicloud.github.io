@@ -129,7 +129,7 @@ The last 60 second events received from NETPIE will be displayed on the output o
 ## Calculate moving average
 To compute moving average for each sliding window. Replace the paragraph **lineStream60.print** with the following code. Restart interpreter and rerun the notebook.
 
-According to Spark Streaming, the lineStream60 is the continuous stream of events organized into sequence of RDDs. Each RDD consists of events within a particular window. We convert each RDD into DataFrame and register it as a table. Then, we can use SQL commands to operate the streaming data. The result avgDF is a DataFrame which only the first 20 rows are shown.
+According to Spark Streaming, the lineStream60 is the continuous stream of events organized into sequence of RDDs. Each RDD consists of events within a particular window. We convert each RDD into DataFrame and register it as a table *measure*. Then, we can use SQL commands to operate the streaming data. The result avgDF is a DataFrame which only the first 20 rows are shown.
 
 ```scala
 lineStream60.foreachRDD( rdd => {
@@ -150,9 +150,9 @@ We replace avgDF.show with
 ```scala
     avgDF.repartition(1).write.csv("/tmp/avg-" + System.currentTimeMillis)
 ```
-The data of avgDF DataFrame at a specific window time are combined into one partition and written into HDFS. The output is available part-00000-\*.csv under the folder /tmp/avg-<timestamp>.
+The data of avgDF DataFrame at a specific window time are combined into one partition and written into HDFS. The output is available in file part-00000-\*.csv under the folder /tmp/avg-<timestamp>.
 
-Thus, the paragraph becomes.
+Thus, the paragraph **lineStream60.print** becomes.
 
 ```scala
 lineStream60.foreachRDD( rdd => {
@@ -164,4 +164,4 @@ lineStream60.foreachRDD( rdd => {
 })
 
 ```
-Replace the paragraph **lineStream60.print** with the following code. Restart interpreter and rerun the notebook.
+Restart interpreter and rerun the notebook.
