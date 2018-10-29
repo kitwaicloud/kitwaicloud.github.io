@@ -8,7 +8,7 @@ This instruction manual provides an illustrative examples to use KitWai cloud co
 
 > For more information, contact kitwai _at_ nectec _dot_ or _dot_ th
 >
-<img src="Nectec_Logo-Small.png" width="100">
+<a href="http://www.nectec.or.th"><img src="Nectec_Logo-Small.png" width="100"></a>
 
 ## Spark Basics
 This section provides a step-by-step from launching a cluster to training and deploying an ML model using Spark. It requires a basic knowledge of Linux commands plus some background knowledge on data mining/machine learning.
