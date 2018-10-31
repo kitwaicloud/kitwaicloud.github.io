@@ -87,7 +87,6 @@ import org.apache.spark.streaming.mqtt._
 ```
 Note that, ssc is annotated with @transient to prevent serialization if checkpointing is enabled.
 
-The
 ### 3. Then, create data stream from using the previous MQTT connection parameters in the next paragraph.
 
 The lineStream is a stream of events, each of which is of the string data type.
