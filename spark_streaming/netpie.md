@@ -9,7 +9,7 @@ Follow the instructions given below.
 ## Find MQTT connection parameters from NETPIE
 First, users are required to have a valid the APPID, APPKEY and APPSECRET from a NETPIE account.
 
-<img src="netpie_appkey.png" width="200">
+<img src="netpie_appkey.png" width="400">
 
 Next, we create a new microgear "thing" and obtain its MQTT connection parameters. We'll use these parameters in Spark Streaming.
 
@@ -50,7 +50,7 @@ print ("Password: " + mqtt_password)
 ```
 
 ## Publish events to NETPIE
-Publish events in JSON format. Consult [NETPIE documentation](https://netpie.io/) for  examples and APIs to publish events. In our example program, each event reports load average, CPU utilization and memory usage of a host at every 10 seconds.
+Publish events in JSON format. Consult [NETPIE documentation](https://netpie.io/) for  examples and APIs to publish events. In our example, each event reports load average, CPU utilization and memory usage of a host at every 5 seconds. The example program is available [here](cpuloadmem.js). Replace APPKEY, APPSECRET, APPID, GEARNAME and TOPIC with yours.
 
 ```json
 {"ts": "2018-10-29T09:53:36+0700", "id": "host-0000", "loadavg": 1.2243, "cpu": 75.7954, "mem": 69.7092}
