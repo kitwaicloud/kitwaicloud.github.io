@@ -1,11 +1,15 @@
 # Connect Spark Streaming to NETPIE IoT Cloud Platform
 
-We show how to connect Spark Streaming to [NETPIE](https://netpie.io/) cloud platform for Internet of Things.
+This section describes how to connect Spark Streaming to [NETPIE](https://netpie.io/) cloud platform for Internet of Things and process stream of events near-realtime as shown in the following figure.
+
+<img src="streaming.png">
+
+Follow the instructions given below.
 
 ## Find MQTT connection parameters from NETPIE
 First, users are required to have a valid the APPID, APPKEY and APPSECRET from a NETPIE account.
 
-<img src="netpie_appkey.png">
+<img src="netpie_appkey.png" width="200">
 
 Next, we create a new microgear "thing" and obtain its MQTT connection parameters. We'll use these parameters in Spark Streaming.
 
@@ -79,9 +83,11 @@ import org.apache.spark.storage.StorageLevel
 import org.apache.spark.streaming._
 import org.apache.spark.streaming.mqtt._
 
-val ssc = new StreamingContext(sc, Seconds(10))
+@transient val ssc = new StreamingContext(sc, Seconds(10))
 ```
+Note that, ssc is annotated with \@transient to prevent serialization if checkpointing is enabled.
 
+The
 ### 3. Then, create data stream from using the previous MQTT connection parameters in the next paragraph.
 
 The lineStream is a stream of events, each of which is of the string data type.
@@ -133,7 +139,6 @@ According to Spark Streaming, the lineStream60 is the continuous stream of event
 
 ```scala
 lineStream60.foreachRDD( rdd => {
-    val ds = spark.createDataset(rdd)
     val measureDF = spark.read.schema("ts Timestamp, id String, loadavg double, cpu double, mem double").option("timestampFormat", "yyyy-MM-dd'T'HH:mm:ssZ").json(rdd)
     measureDF.createOrReplaceTempView("measure")
     val avgDF = spark.sql("select max(ts) as ts, id, avg(loadavg), avg(cpu), avg(mem) from measure group by id order by ts, id")
