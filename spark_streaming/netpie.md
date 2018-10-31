@@ -85,7 +85,7 @@ import org.apache.spark.streaming.mqtt._
 
 @transient val ssc = new StreamingContext(sc, Seconds(10))
 ```
-Note that, ssc is annotated with \@transient to prevent serialization if checkpointing is enabled.
+Note that, ssc is annotated with @transient to prevent serialization if checkpointing is enabled.
 
 The
 ### 3. Then, create data stream from using the previous MQTT connection parameters in the next paragraph.
