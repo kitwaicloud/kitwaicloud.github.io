@@ -1,7 +1,7 @@
 # Simple Threshold-based Anomaly Detection
 
 This section provides an example for simple threshold-based anomaly detection based on Spark Streaming and SparkSQL.
-The example is capable to handle several thousands events per second with mini-batch processing on a small cluster.
+The example is capable to handle several thousands events per second with mini-batch processing on a small cluster when configured properly.
 
 Before continue, follow the [previous instructions](netpie.md) to create a simple Spark Streaming application that receives events from NETPIE.
 
