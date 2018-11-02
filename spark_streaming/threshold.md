@@ -24,7 +24,8 @@ hdfs dfs -put thresholds.csv /user/centos/thresholds.csv
 ```
 
 ## Read thresholds.csv into table under SparkSQL
-In Zeppelin, insert the following paragraph before creating the StreamingContext. The thresholds are loaded into table *threshold*.
+In Zeppelin, insert the following paragraph before creating the StreamingContext. The thresholds are loaded into table *threshold*. Notice that we cache the table in memory so that the file is not reloaded from HDFS every time.
+
 ```scala
 val thresholdDF = spark.read.format("csv").option("header", "false").load("thresholds.csv").toDF("id","field","low","high").cache
 thresholdDF.createOrReplaceTempView("threshold")
@@ -185,3 +186,6 @@ lineStream.transform( rdd => {
 
 ssc.checkpoint("/checkpoint")
 ```
+
+## How to update threshold settings
+For long running applications, it is necessary to update threshold settings without having to stop the Spark Streaming job. There are options to achieve this. One option is to reload the whole thresholds.csv file into threshold table at a  regular interval in the lineStream60.foreachRDD transformation. Another option would be to send only the new thresholds in a separate stream and merge them into the existing threshold table (joining stream and DataFrame).
