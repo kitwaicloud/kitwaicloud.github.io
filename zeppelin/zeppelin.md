@@ -96,5 +96,5 @@ We can adjust size and layout of the paragraphs as follows.
 
 <img src="charts.png" width="600">
 
-# Scale down Zeppelin node group if it is no longer used
+## Scale down Zeppelin node group if it is no longer used
 To shutdown the Zeppelin node, please scale down the Zeppelin node group to 0. The KitWai backend service will disconnect it from the cluster cleanly. Attempting to terminate the instance directly may cause undesirable results.
