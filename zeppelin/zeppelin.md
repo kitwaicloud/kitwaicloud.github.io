@@ -46,7 +46,7 @@ This sample data is from [UCI bank dataset](https://archive.ics.uci.edu/ml/datas
 ## Read data and create a table in SparkSQL
 In the next paragraph, **remove %sh in the first line** in order to use the default spark interpreter.
 
-In the blank paragraph, copy the following code block and play. The program will read the CSV file and create a "bank" table. It may take seconds to finish due to the overhead of creating a new Spark context. This example is adapted from [Zeppelin Tutorial](https://zeppelin.apache.org/docs/0.8.0/quickstart/tutorial.html).
+Copy the following code block and play this paragraph. The program will read the CSV file and create a "bank" table. It may take seconds to finish due to the overhead of creating a new Spark context. This example is adapted from [Zeppelin Tutorial](https://zeppelin.apache.org/docs/0.8.0/quickstart/tutorial.html).
 
 ```scala
 val bankText = sc.textFile("/user/centos/bank-full.csv")
