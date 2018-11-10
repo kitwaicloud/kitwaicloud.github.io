@@ -16,3 +16,6 @@ KitWai consists of the following components.
 KitWai is not limited to be installed on bare-metal machines. Thanks to LXC container, virtual machine environment is also supported.
 
 <sup>1</sup> Several python packages are already installed in the cluster, including numpy, pandas, matplotlib, etc. Additionally, Java and Scala compilers are pre-installed too.
+
+## Scalability
+A cluster can be scaled up or down to work with changing workload as per user demands. The ability to scale depends on the processes running on the node groups. Check the [Capabities Matrix](/capabilities.md) to find the complete list of all processes.

@@ -60,6 +60,7 @@ Use the ELK (Elasticsearch Logstash and Kibana) stack to store, explore and visu
 - [Deep Learning with DeepLearning4J](dl4j/dl4j.md)
 - [Deep Learning with TensorFlow on Spark](tensorflow_on_spark/tensorflow_on_spark.md)
 - [How to Create Node Group Templates and a Cluster Template](create_template/create_template.md)
+- [Capabities Matrix](capabilities.md)
 - [Security in KitWai](security/security.md)
 - [Using API Libraries to Operate KitWai](apis/apis.md)
 - [Launch a Flink Cluster](launchflink/launchflink.md)
