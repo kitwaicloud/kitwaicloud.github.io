@@ -113,3 +113,7 @@ Currently, SparkR is not the mainstream development of Spark APIs compared to Sc
 
 ## Install additional R libraries
 For operations that require additional R packages to process DataFrame on Spark worker nodes, the packages must exist on all worker nodes. So, users are required to manually install the additional packages by the standard installation procedure of R packages on each node.  
+
+
+# Scale down RStudio node group if it is no longer used
+To shutdown the RStudio node, please scale down the RStudio node group to 0. The KitWai backend service will disconnect it from the cluster cleanly. Attempting to terminate the instance directly may cause undesirable results.
