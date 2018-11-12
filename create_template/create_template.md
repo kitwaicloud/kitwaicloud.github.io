@@ -10,7 +10,7 @@ Before launching a spark cluster, you have to create node group templates and a 
 
 2. This example, we will create two node group templates which consists of master and worker node group template. The master node runs spark master, HDFS name node, Jupyter and also ganglia master service. The worker node runs spark worker, HDFS data node and also ganglia slave service. In order to achieve the requirements, please follow the below instructions.
 
-   #### **Create node group template named "master"** 
+   #### **Create node group template named "master"**
 
    2.1 On Clusters panel, click on the "Create Template" button at the top right.
 
@@ -20,11 +20,11 @@ Before launching a spark cluster, you have to create node group templates and a 
 
    <img src="nodegrouppanel.png" width="500">
 
-   2.3 On "Configure Node Group Template" tab. Fill out Template name as your desired and choose "OpenStack Flavor" to determine the size (VCPUs, memory and storage) of all launched VMs,  "Availability Zone" and "Floating IP Pool" which specifies public IP pool for each node group from dropdowns as shown image below. 
+   2.3 On "Configure Node Group Template" tab. Fill out Template name as your desired and choose "OpenStack Flavor" to determine the size (VCPUs, memory and storage) of all launched VMs,  "Availability Zone" and "Floating IP Pool" which specifies public IP pool for each node group from dropdowns as shown image below.
 
    <img src="confignodegrouptemplate.png" width="300">
 
-   
+
 
    2.4 Switch to the "Node Processes" tab and choose which processes should be run for spark master instance that are spawned from this Node Group Template as shown image below.
 
@@ -38,7 +38,8 @@ Before launching a spark cluster, you have to create node group templates and a 
 
    <img src="mastercreated.png" width="500">
 
-   
+
+   Note that the ability to scale a node group depends on the processes running on the node group. Check the [Capabities Matrix](/capabilities.md) to find the complete list of all processes.
 
    #### **Create another one node group template named worker node**
 
@@ -54,6 +55,8 @@ Before launching a spark cluster, you have to create node group templates and a 
 
    <img src="workercreated.png" width="500">
 
+
+   Note that the ability to scale a node group depends on the processes running on the node group. Check the [Capabities Matrix](/capabilities.md) to find the complete list of all processes.
 
 
 ## Create a Cluster template
@@ -72,7 +75,7 @@ Before launching a spark cluster, you have to create node group templates and a 
 
    <img src="clustertemplatedetails.png" width="500">
 
-5. Switch to "Node Groups" tab,  We can choose created node group template from "Select a Node Group Template to add" dropdown list and click on "+" button for adding them into cluster template. We can adjust number of instance in each node group template by click on "+" and "-" button. 
+5. Switch to "Node Groups" tab,  We can choose created node group template from "Select a Node Group Template to add" dropdown list and click on "+" button for adding them into cluster template. We can adjust number of instance in each node group template by click on "+" and "-" button.
 
    <img src="clustertemplateaddnode.png" width="550">
 
@@ -83,4 +86,3 @@ Before launching a spark cluster, you have to create node group templates and a 
 7. The Cluster template is listed on Cluster panel, the template has been successfully created.
 
    <img src="clustertemplatecreated.png" width="500">
-
