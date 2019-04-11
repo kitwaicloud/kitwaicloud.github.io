@@ -80,7 +80,7 @@ Create a temporary table in SparkSQL and execute an SQL command.
 ```R
 createOrReplaceTempView(bankDF, "bank")
 resultDF <- sql("SELECT age, count(1) FROM bank GROUP BY  age ORDER BY age")
-showDF(results)
+showDF(resultDF)
 +---+--------+        
 |age|count(1)|
 +---+--------+
