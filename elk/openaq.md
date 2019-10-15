@@ -8,6 +8,9 @@ In the Cerebro Web UI, click on the _rest_ menu.
    <img src="cerebro_rest.png" width="250">
 
 Enter the index name "_openaq_" and select "_PUT_". Copy and paste the following mappings into the textbox as shown in the figure below. The doc_id is the generated id for the measurements at each station and in each point in time. More information can be found in [OpenAQ FAQ](https://github.com/openaq/openaq-info/blob/master/FAQ.md).
+
+   <img src="cerebro_create_index.png" width="500">
+
 ```json
 {
  "mappings": {
