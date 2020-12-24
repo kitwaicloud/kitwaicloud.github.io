@@ -762,9 +762,13 @@ Users can try to adjust training parameters to improve the accuracy of predictio
 Export the model into PMML format. The PMML file can be downloaded and deployed with other tools such as [Openscoring](https://github.com/openscoring/openscoring). Users can also deploy the PMML model with KitWai Openscoring cluster. See [How to Deploy a Spark ML Model](../deploy/deploy.md) for more details.
 
 ```python
-from jpmml_sparkml import toPMMLBytes
+from pyspark2pmml import PMMLBuilder
+pmmlBytes = PMMLBuilder(sc, train_data, model).buildByteArray()
 
-pmmlBytes = toPMMLBytes(sc, train_data, model)
+# Jpmml sparkml lib for python 2 is no longer supported.
+#from jpmml_sparkml import toPMMLBytes
+#pmmlBytes = toPMMLBytes(sc, train_data, model)
+
 #print(pmmlBytes.decode("UTF-8"))
 
 pmml = pmmlBytes.decode("UTF-8")
