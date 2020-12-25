@@ -225,11 +225,11 @@ Users are highly recommended to change the password in the Profile menu right af
 
 Click on the Database menu to create a new database with the following data. Replace the superset node in SQLAlchemy URI with the correct one.
 
-Database: Thailand Government Spending
-SQLAlchemy URI: sparksql://test-superset-0:10000
-Expose in SQL Lab: YES
-Allow CREATE TABLE AS: YES
-Allow DML: YES
+  Database: Thailand Government Spending
+  SQLAlchemy URI: hive://localhost:10000
+  Expose in SQL Lab: YES
+  Allow CREATE TABLE AS: YES
+  Allow DML: YES
 
 <img src="databases.png">
 
