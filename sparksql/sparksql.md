@@ -43,22 +43,26 @@ The sample data looks like:
 
 ## Submit queries with beeline
 
-Connect beeline to Thrift server. Suppose that the superset node is named test-superset-0. we set the connection string to jdbc:hive2://test-superset-0:1000. We can also use localhost here. Set the username to centos. The password is ignored by default.
+Connect beeline to Thrift server. Suppose that the superset node is named test-superset-0. we set the connection string to 
+```
+jdbc:hive2://localhost:10000
+```
+Set the username to centos. The password is ignored by default.
 
 ```
 [centos@test-superset-0 ~]$ beeline
 Beeline version 1.2.1.spark2 by Apache Hive
-beeline> !connect jdbc:hive2://test-superset-0:10000
-Connecting to jdbc:hive2://test-superset-0:10000
-Enter username for jdbc:hive2://test-superset-0:10000: centos
-Enter password for jdbc:hive2://test-superset-0:10000:
-18/08/01 16:48:08 INFO Utils: Supplied authorities: test-superset-0:10000
-18/08/01 16:48:08 INFO Utils: Resolved authority: test-superset-0:10000
-18/08/01 16:48:08 INFO HiveConnection: Will try to open client transport with JDBC Uri: jdbc:hive2://test-superset-0:10000
+beeline> !connect jdbc:hive2://localhost:10000
+Connecting to jdbc:hive2://localhost:10000
+Enter username for jdbc:hive2://localhost:10000: centos
+Enter password for jdbc:hive2://localhost:10000:
+18/08/01 16:48:08 INFO Utils: Supplied authorities: localhost:10000
+18/08/01 16:48:08 INFO Utils: Resolved authority: localhost:10000
+18/08/01 16:48:08 INFO HiveConnection: Will try to open client transport with JDBC Uri: jdbc:hive2://localhost:10000
 Connected to: Spark SQL (version 2.3.1)
 Driver: Hive JDBC (version 1.2.1.spark2)
 Transaction isolation: TRANSACTION_REPEATABLE_READ
-0: jdbc:hive2://test-superset-0:10000>
+0: jdbc:hive2://localhost:10000>
 ```
 
 Then, type the following SQL commands in beeline.
